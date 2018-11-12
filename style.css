@@ -1,0 +1,610 @@
+/* Universal resets */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+a,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+@media only screen and (min-width:320px) {
+/* Main-Wrapper */
+header {
+	background: black;
+}
+/* text */
+.title-wrapper {
+	width: 80%;
+	margin: 0 10%;
+	margin-top: 5em; 
+	position: absolute;
+	background: none;
+	z-index: 80;
+	color: white;
+	font-family: PlayfairDisplay-Regular;
+	overflow: hidden;
+	
+
+	
+}
+.title-wrapper h1 {
+	font-size: 1.9em;
+	text-transform: uppercase;
+}
+.title-wrapper h2 {
+	font-size: 1em;
+	margin: .6em 0; 
+	width: 105%;
+	padding-bottom: .5em;
+	font-family: PT Sans;
+}
+span {
+	padding: 0 10px;
+	font-size: 1.2em;
+	font-weight: 800; 
+	
+
+}
+.title-wrapper p {
+	font-family: PT sans; 
+	font-size: 1em;
+	margin-bottom: .3em;
+}
+/* social links and buttons */
+.social {
+	display: grid;
+	grid-template-columns: 1fr;
+	
+}
+.social i {
+	font-size: 20px;
+	margin: 0 5px; 
+	padding: 20px 10px ; 
+	color: rgba(255, 255, 255, .5);
+}
+.social i:hover {
+		color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+}
+button {
+	width: 180;   
+	font-size: .6em;
+	margin: 1.5em 0 ;
+	padding: 10px 0; 
+	background: none; 
+	color: white; 
+	text-transform: uppercase;  
+	cursor: pointer; 
+	transition-property: color;
+	transition-property: background;
+	transition-property: transform;
+	transition-duration: .25s;
+	transition-timing-function: ease-in-out;
+	border: solid white 2.2px;
+	border-radius: 4px;
+	font-weight: 600;
+	display: block;
+}
+button:hover {
+	color: black;
+	background: white;
+	border: none;
+	transform: scale(1.05);
+	border: solid white 2.2px;
+
+}
+ /* the slide show */
+.slide-show {
+	width: 100%;
+	height: 100%;
+}
+.slide-show img {
+	position: absolute;
+	transition: opacity 1s linear;
+	width: 170%;
+	height: 100%;
+}
+img + img { 
+	opacity: 0; 
+}
+		/* the contact form */
+.overlay {
+	position: absolute; 
+	top: 0; 
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 999; 
+	color: white; 
+	background: rgba(0,0,0,0.95);
+	font-family: Poppins;
+
+}
+.overlay-content {
+	width: 40%;
+	margin: auto;
+}
+#close {
+	position: absolute; 
+	z-index: 99999; 
+	top: -15;
+	right: 0;
+	font-size: 50px;
+	font-style: normal;
+	cursor: pointer;
+	transition: transform .75s ease; 
+}
+#close:hover {
+		transform:rotate(90deg);
+	}
+fieldset {
+	border: none; 
+}
+form {
+	margin-top: 5em;
+	position: relative;
+}
+form h3 {
+	font-family: PlayfairDisplay-Regular;
+	font-size: 1.8em;
+	margin-bottom: 1em;
+
+}
+/* the name div */
+.name-wrapper {
+	width: 100%;
+	margin: auto;
+	margin-top: 1em;
+}
+.name-wrapper p {
+	font-size: 15px;
+	margin: 7px 0 
+}
+.name-inputs {
+	display: grid;
+	grid-template-columns: 1fr ; 
+	grid-gap: 20px
+}
+.name-inputs input {
+	width: 100%;
+	padding: 7px 0 7px 3px;
+	border: none; 
+	font-size: 17px;
+	border-radius: 3px;
+	margin-bottom: 1em;
+}
+/* the other contact divs */
+.email-wrapper {
+	font-size: 15px;
+	margin: 1em 0;
+}
+.email-wrapper p {
+	font-size: 15px;
+	margin: 7px 0 
+}
+.email-wrapper input {
+	width: 100%;
+	padding: 7px 0 7px 3px;
+	border: none; 
+	font-size: 17px;
+	border-radius: 3px 
+}
+/* the text field  */
+.text-wrapper p {
+	font-size: 15px;
+	margin: 7px 0 
+}
+.text-wrapper textarea {
+	width: 100%;
+	padding: 7px 0 7px 3px;
+	border: none; 
+	font-size: 17px;
+	border-radius: 3px;
+	height: 100px;
+	
+}
+/* the button  */
+#submit {
+	margin-top: 2.6em;
+	font-size: .8em;
+	
+}
+	#submit {
+	margin-top: 2.6em;
+	font-size: .8em;
+	
+}
+	#demo {
+		position: absolute;
+		bottom: 17em;
+		left: 3.7em;
+		z-index: 1000;
+		width: 100px;
+		font-size: 12px;
+		color: white;
+		background: #00CCCC;
+		border: solid 2px #00CCCC;
+	}
+	#demo:hover {
+		transform: scale(1.15);
+	}
+
+
+	
+}
+@media only screen and (min-width:768px) {
+	.title-wrapper {
+		width: 60%;
+		margin: 7em 0 0 10em; 
+	}
+	.title-wrapper h1 {
+		font-size: 2em
+	}
+	.title-wrapper h2 {
+		font-size: 1.2em
+	}
+	.title-wrapper p {
+		font-size: 1em;
+	}
+	button {
+		width: 300px;
+		font-size: .7em;
+	}
+	.social i {
+		font-size: 27px;
+	}
+}
+@media only screen and (min-width:1024px) {
+/* Main-Wrapper */
+header {
+	background: black;
+}
+/* text */
+.title-wrapper {
+	width: 52%;
+	position: absolute;
+	background: none;
+	z-index: 80;
+	top: 5em;
+	right: 1em;
+	color: white;
+	font-family: PlayfairDisplay-Regular;
+	font-size: 1.5em;
+
+	
+}
+.title-wrapper h1 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+.title-wrapper h2 {
+	font-size: 1em;
+	font-family: PT Sans;
+}
+span {
+	padding: 0 10px;
+	font-size: 1.2em;
+	font-weight: 800; 
+	
+
+}
+.title-wrapper p {
+	font-family: PT sans; 
+	font-size: .8em;
+}
+/* social links and buttons */
+.social {
+	display: grid;
+	grid-template-columns: 60% 1fr;
+	width: 100%;
+}
+.social i {
+	font-size: 26px;
+	color: rgba(255, 255, 255, .5);
+}
+.social i:hover {
+		color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+}
+button {
+	width: 120;
+	font-size: .5em;
+	background: none; 
+	color: white; 
+	text-transform: uppercase; 
+	margin: .8em .2em;
+	cursor: pointer; 
+	transition-property: color;
+	transition-property: background;
+	transition-property: transform;
+	transition-duration: .25s;
+	transition-timing-function: ease-in-out;
+	border: solid white 2.2px;
+	border-radius: 4px;
+	font-weight: 600;
+	display: inline-block;
+}
+button:hover {
+	color: black;
+	background: white;
+	border: none;
+	transform: scale(1.05);
+	border: solid white 2.2px;
+
+}
+ /* the slide show */
+.slide-show {
+	width: 100%;
+	height: 100%;
+}
+.slide-show img {
+	position: absolute;
+	transition: opacity 1s linear;
+	width: 100%;
+	height: 100%;
+}
+img + img { 
+	opacity: 0; 
+}
+	/* the contact form */
+.overlay {
+	position: absolute; 
+	top: 0; 
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 999; 
+	color: white; 
+	background: rgba(0,0,0,0.95);
+	font-family: Poppins;
+
+}
+.overlay-content {
+	width: 40%;
+	margin: auto;
+}
+#close {
+	position: absolute; 
+	z-index: 99999; 
+	top: -15;
+	right: 0;
+	font-size: 50px;
+	font-style: normal;
+	cursor: pointer;
+	transition: transform .75s ease; 
+}
+	#close:hover {
+		transform:rotate(90deg);
+	}
+fieldset {
+	border: none; 
+}
+form {
+	margin-top: 5em;
+	position: relative;
+}
+form h3 {
+	font-family: PlayfairDisplay-Regular;
+	font-size: 1.8em;
+	margin-bottom: 1em;
+
+}
+/* the name div */
+.name-wrapper {
+	width: 100%;
+	margin: auto;
+	margin-top: 1em;
+}
+.name-wrapper p {
+	font-size: 15px;
+	margin: 7px 0 
+}
+.name-inputs {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-gap: 20px
+}
+.name-inputs input {
+	width: 100%;
+	padding: 7px 0 7px 3px;
+	border: none; 
+	font-size: 17px;
+	border-radius: 3px
+}
+/* the other contact divs */
+.email-wrapper {
+	font-size: 15px;
+	margin: 3em 0;
+}
+.email-wrapper p {
+	font-size: 15px;
+	margin: 7px 0 
+}
+.email-wrapper input {
+	width: 100%;
+	padding: 7px 0 7px 3px;
+	border: none; 
+	font-size: 17px;
+	border-radius: 3px 
+}
+/* the text field  */
+.text-wrapper p {
+	font-size: 15px;
+	margin: 7px 0 
+}
+.text-wrapper textarea {
+	width: 100%;
+	padding: 7px 0 7px 3px;
+	border: none; 
+	font-size: 17px;
+	border-radius: 3px;
+	height: 100px;
+	
+}
+/* the button  */
+#submit {
+	margin-top: 2.6em;
+	font-size: .8em;
+	
+}
+	#demo {
+		position: absolute;
+		bottom: 1.5em;
+		left: 2em;
+		z-index: 1000;
+		width: 150px;
+		font-size: 17px;
+		color: white;
+		background: #00CCCC;
+		border: solid 2px #00CCCC;
+	}
+	#demo:hover {
+		transform: scale(1.15);
+	}
+
+
+	
+}
+@media only screen and (min-width:1239px) {
+	.social {
+		grid-template-columns: 1fr 37%;
+	}
+	.social i {
+		padding:  15px 5px 0 5px; 
+	}
+	
+}
+@media only screen and (min-width:1288px) {
+	/* social links and buttons */
+.social {
+	display: grid;
+	grid-template-columns: 65% 1fr;
+	width: 100%;
+}
+.social i {
+	font-size: 26px;
+	color: rgba(255, 255, 255, .5);
+}
+button {
+	width: 120;
+	font-size: .5em;
+	padding: 10px 0; 
+	background: none; 
+	color: white; 
+	text-transform: uppercase; 
+	margin: .8em .3em;
+	cursor: pointer; 
+	transition-property: color;
+	transition-property: background;
+	transition-property: transform;
+	transition-duration: .25s;
+	transition-timing-function: ease-in-out;
+	border: solid white 2.2px;
+	border-radius: 4px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+	
+}
+@media only screen and (min-width:1440px) {
+	/* Main-Wrapper */
+header {
+	background: black;
+}
+/* text */
+.title-wrapper {
+	width: 52%;
+	position: absolute;
+	background: none;
+	z-index: 80;
+	top: 5em;
+	right: 1em;
+	color: white;
+	font-family: PlayfairDisplay-Regular;
+	font-size: 1.5em;
+
+	
+}
+.title-wrapper h1 {
+	font-size: 2.7em;
+	text-transform: uppercase;
+}
+.title-wrapper h2 {
+	font-size: 1.1em;
+	padding-bottom: .5em;
+	font-family: PT Sans;
+	margin: 0;
+}
+span {
+	padding: 0 10px;
+	font-size: 1.2em;
+	font-weight: 800; 
+	
+
+}
+.title-wrapper p {
+	font-family: PT sans; 
+	font-size: .8em;
+	margin-bottom: .3em;
+}
+/* social links and buttons */
+.social {
+	display: grid;
+	grid-template-columns: 60% 1fr;
+	width: 100%;
+}
+.social i {
+	font-size: 25px;
+	color: rgba(255, 255, 255, .5);
+}
+.social i:hover {
+		color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+}
+button {
+	width: 30%;
+	font-size: .6em;
+	padding: 10px 0; 
+	background: none; 
+	color: white; 
+	text-transform: uppercase; 
+	margin: .8em .3em;
+	cursor: pointer; 
+	transition-property: color;
+	transition-property: background;
+	transition-property: transform;
+	transition-duration: .25s;
+	transition-timing-function: ease-in-out;
+	border: solid white 2.2px;
+	border-radius: 4px;
+	font-weight: 600;
+}
+button:hover {
+	color: black;
+	background: white;
+	border: none;
+	transform: scale(1.05);
+	border: solid white 2.2px;
+
+}
+ /* the slide show */
+.slide-show {
+	width: 100%;
+	height: 100%;
+}
+.slide-show img {
+	position: absolute;
+	transition: opacity 1s linear;
+	width: 100%;
+	height: 100%;
+}
+img + img { 
+	opacity: 0; 
+}
+
+	
+}
