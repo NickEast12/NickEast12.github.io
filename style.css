@@ -63,7 +63,7 @@ span {
 	font-size: 20px;
 	margin: 0 5px; 
 	padding: 20px 10px ; 
-	color: rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, 1);
 }
 .social i:hover {
 		color: rgba(255, 255, 255, 1);
@@ -124,7 +124,7 @@ img + img {
 
 }
 .overlay-content {
-	width: 40%;
+	width: 70%;
 	margin: auto;
 }
 #close {
@@ -219,9 +219,9 @@ form h3 {
 }
 	#demo {
 		position: absolute;
-		bottom: 17em;
+		bottom: 5em;
 		left: 3.7em;
-		z-index: 1000;
+		z-index: 800;
 		width: 100px;
 		font-size: 12px;
 		color: white;
@@ -454,7 +454,7 @@ form h3 {
 		position: absolute;
 		bottom: 1.5em;
 		left: 2em;
-		z-index: 1000;
+		z-index: 1;
 		width: 150px;
 		font-size: 17px;
 		color: white;
