@@ -50,7 +50,7 @@ span {
 }
 .title-wrapper p {
 	font-family: poppins; 
-	font-size: 1em;
+	font-size: .7em;
 	margin-bottom: .3em;
 }
 /* social links and buttons */
@@ -130,9 +130,9 @@ img + img {
 #close {
 	position: absolute; 
 	z-index: 99999; 
-	top: -15;
-	right: 0;
-	font-size: 50px;
+	top: -6px;
+	right: -7px;
+	font-size: 40px;
 	font-style: normal;
 	cursor: pointer;
 	transition: transform .75s ease; 
@@ -144,7 +144,7 @@ fieldset {
 	border: none; 
 }
 form {
-	margin-top: 5em;
+	margin-top: 1em;
 	position: relative;
 }
 form h3 {
@@ -219,7 +219,7 @@ form h3 {
 }
 	#demo {
 		position: absolute;
-		bottom: 5em;
+		bottom: 0em;
 		left: 3.7em;
 		z-index: 800;
 		width: 100px;
