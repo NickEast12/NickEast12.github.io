@@ -39,7 +39,7 @@ header {
 	margin: .6em 0; 
 	width: 105%;
 	padding-bottom: .5em;
-	font-family: PT Sans;
+	font-family: poppins;
 }
 span {
 	padding: 0 10px;
@@ -49,7 +49,7 @@ span {
 
 }
 .title-wrapper p {
-	font-family: PT sans; 
+	font-family: poppins; 
 	font-size: 1em;
 	margin-bottom: .3em;
 }
@@ -104,7 +104,7 @@ button:hover {
 .slide-show img {
 	position: absolute;
 	transition: opacity 1s linear;
-	width: 170%;
+	width: 100%;
 	height: 100%;
 }
 img + img { 
@@ -282,7 +282,7 @@ header {
 }
 .title-wrapper h2 {
 	font-size: 1em;
-	font-family: PT Sans;
+	font-family: poppins;
 }
 span {
 	padding: 0 10px;
@@ -292,7 +292,7 @@ span {
 
 }
 .title-wrapper p {
-	font-family: PT sans; 
+	font-family: poppins; 
 	font-size: .8em;
 }
 /* social links and buttons */
@@ -536,7 +536,7 @@ header {
 .title-wrapper h2 {
 	font-size: 1.1em;
 	padding-bottom: .5em;
-	font-family: PT Sans;
+	font-family: poppins;
 	margin: 0;
 }
 span {
@@ -547,7 +547,7 @@ span {
 
 }
 .title-wrapper p {
-	font-family: PT sans; 
+	font-family: poppins; 
 	font-size: .8em;
 	margin-bottom: .3em;
 }
