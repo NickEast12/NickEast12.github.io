@@ -130,7 +130,7 @@ img + img {
 #close {
 	position: absolute; 
 	z-index: 99999; 
-	top: -6px;
+	top: -6.5px;
 	right: -7px;
 	font-size: 40px;
 	font-style: normal;
@@ -207,19 +207,15 @@ form h3 {
 	
 }
 /* the button  */
-#submit {
-	margin-top: 2.6em;
-	font-size: .8em;
-	
-}
+
 	#submit {
-	margin-top: 2.6em;
+	margin-top: 1em;
 	font-size: .8em;
 	
 }
 	#demo {
 		position: absolute;
-		bottom: 0em;
+		bottom: 3em;
 		left: 3.7em;
 		z-index: 800;
 		width: 100px;
@@ -452,7 +448,6 @@ form h3 {
 }
 	#demo {
 		position: absolute;
-		bottom: 1.5em;
 		left: 2em;
 		z-index: 1;
 		width: 150px;
