@@ -19,11 +19,10 @@ header {
 }
 /* text */
 .title-wrapper {
-	width: 100%;
+	width: 80%;
 	margin: 0 10%;
-	margin-top: 2.5em; 
+	margin-top: 5.5em; 
 	position: absolute;
-	background: none;
 	z-index: 80;
 	color: white;
 	font-family: PlayfairDisplay-Regular;
@@ -33,13 +32,13 @@ header {
 	
 }
 .title-wrapper h1 {
-	font-size: 1.9em;
+	font-size: 2.4em;
 	text-transform: uppercase;
 }
 .title-wrapper h2 {
-	font-size: .8em;
+	font-size: 1em;
 	margin: .6em 0; 
-	width: 80%;
+	width: 100%;
 	padding-bottom: .5em;
 	font-family: poppins;
 }
@@ -52,7 +51,7 @@ span {
 }
 .title-wrapper p {
 	font-family: poppins; 
-	font-size: .7em;
+	font-size: .9em;
 	margin-bottom: .3em;
 }
 /* social links and buttons */
@@ -64,7 +63,7 @@ span {
 .social i {
 	font-size: 20px;
 	margin: 0 5px; 
-	padding: 20px 10px ; 
+	padding: 20px 24px ; 
 	color: rgba(255, 255, 255, 1);
 }
 .social i:hover {
@@ -72,12 +71,12 @@ span {
 	cursor: pointer;
 }
 button {
-	width: 180;   
-	font-size: .6em;
-	margin: 1.5em 0 ;
+	width: 90%;   
+	font-size: 1em;
+	margin: 2em 5%; 
 	padding: 10px 0; 
-	background: none; 
-	color: white; 
+	background: white; 
+	color: black; 
 	text-transform: uppercase;  
 	cursor: pointer; 
 	transition-property: color;
