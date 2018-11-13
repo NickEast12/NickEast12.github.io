@@ -58,7 +58,7 @@ span {
 .social {
 	display: grid;
 	grid-template-columns: 1fr;
-	
+	margin-bottom: 5em;
 }
 .social i {
 	font-size: 20px;
@@ -122,6 +122,7 @@ img + img {
 	color: white; 
 	background: rgba(0,0,0,0.95);
 	font-family: Poppins;
+	overflow: hidden;
 
 }
 .overlay-content {
@@ -216,7 +217,7 @@ form h3 {
 }
 	#demo {
 		position: absolute;
-		bottom: 50px;
+		bottom: 10px;
 		left: 3.7em;
 		z-index: 800;
 		width: 100px;
