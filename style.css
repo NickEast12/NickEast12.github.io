@@ -50,12 +50,11 @@ button {
    /* Login overlay */
    .login-overlay {
        position: absolute;
-       top: 0;
+       top: 100%;
        width: 100%;
        height: 100%;
-       background: rgba(0, 0, 0, .9);
-       transform: translateY(100%); 
-       transition: transform .3s ease-out;
+       background: rgba(0, 0, 0, .9); 
+       transition: top .3s ease-out;
        
    }
    .login-overlay-content {
