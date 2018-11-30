@@ -1,22 +1,35 @@
-var current = 0,
-    slides = document.getElementsByTagName("img");
-
-setInterval(function () {
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.opacity = 0;
-  }
-  current = (current != slides.length - 1) ? current + 1 : 0;
-  slides[current].style.opacity = 1;
-}, 10000);
+const signInTrigger = document.getElementById('sign-in-opener');
+const signInClose = document.getElementById('sign-in-close');
+const overlay = document.getElementById('overlay');
+const signInBtn = document.getElementById('sign-in-btn');
+const incPassword = document.getElementById('incPassword');
 
 
-var menu = document.getElementById('overlay');
-var closeBtn = document.getElementById('close');
-var openBtn = document.getElementById('bizEnq');
 
-openBtn.onclick =function() {
-	menu.style.display = 'block';
-}
-closeBtn.onclick =function() {
-	menu.style.display = 'none';
-}
+
+signInTrigger.addEventListener('click', () => {
+    overlay.style.transform = "translateY(0)";
+})
+signInClose.addEventListener('click', () => {
+    overlay.style.transform = "translateY(100%)"; 
+})
+
+
+
+    signInBtn.addEventListener('click' , () => {
+        const userName = document.getElementById('username').value;
+        const passWord = document.getElementById('password').value;
+        if (userName == 'username' && passWord == 'password') {
+            console.log(userName + passWord);
+            window.location.href = "main-page.html";
+        }else {
+            incPassword.innerHTML = 'Incorrect Username or Password'
+        }
+        
+        
+    })
+  
+
+  
+
+  

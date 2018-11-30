@@ -1,74 +1,32 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE <!DOCTYPE html>
 <html>
-	<head>
-		<title>Nick East</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-
-	</head>
-	<header>
-		<button id="demo"><a href="index2.html">Testing Area</a></button>
-		<div class="overlay" id="overlay">
-			<div class="overlay-content">
-				<fieldset>
-					<form>
-						<h3>Get In Contact</h3>
-						<i id="close" class="close">&times;</i>
-						<div class="name-wrapper">
-							<p>Name</p>
-							<div class="name-inputs">
-								<input type="text" placeholder="First">
-								<input type="text" placeholder="Last"> 
-							</div>
-						</div>
-						<div class="email-wrapper">
-							<p>Email</p>
-							<input type="email">
-						</div>
-						<div class="email-wrapper">
-							<p>Subject</p>
-							<input type="text">
-						</div>
-						<div class="text-wrapper">
-							<p>Message</p>
-							<textarea></textarea>
-						</div>
-						<button type="submit" id="submit">Submit</button>
-					</form>
-				</fieldset>
-			</div>
-		</div>
-		<div class="title-wrapper">
-			<h1>Nicholas East</h1>
-			<h2>Trainee Front-End Web Developer<span>//</span>Amature Photographer</h2>
-			<p>Trainee Front-End Web Developer &amp; Amature Photographer. Lover of all thing Tech and Canon Cameras. Currently residing in London, England.</p>
-			<div class="social">
-				<div class="buttons">
-				<button id="bizEnq">Biz Enquiry</button>
-				<button>Gallery</button>
-				<button><a href="https://github.com/NickEast12" target="_blank">GitHub</a></button>
-			</div>
-				<div class="social-links">
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-facebook-f"></i>
-				<i class="fab fa-google-plus-g"></i>
-			</div>
-			</div>
-		</div>
-		<div class="slide-show" id="slideShow">
-			<img src="main-pictures/candle.jpeg">
-			<img src="main-pictures/DSC01335%20copy.jpg">
-			<img src="main-pictures/lily-bali.jpg">
-			<img src="main-pictures/space2.jpg">
-			<img src="main-pictures/space:lake.jpg">
-			<img src="main-pictures/forest%20copy.jpg">
-			<img src="main-pictures/DSC01176%20copy.jpg">
-		</div>
-		<script src="script.js" type="text/javascript"></script>
-	</header>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JoyPad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="login-wrapper"> 
+        <div class="login-content-wrapper">
+            <i class="fas fa-gamepad"></i>
+            <button id="sign-in-opener">Sign In</button>
+        </div>
+    </div>
+    <div class="login-overlay" id="overlay">
+        <div class="login-overlay-content">
+             <form>
+                    <input type="text" placeholder="Username" id="username">
+                    <input type="password" placeholder="Password" id="password">
+                    <button id="sign-in-btn" type="button">Sign In</button>
+                    <span id="sign-in-close">&times</span>
+                    <p id="incPassword"></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+   
 </html>
