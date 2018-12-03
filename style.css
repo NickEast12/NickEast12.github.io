@@ -136,8 +136,11 @@ button {
     display: grid;
     grid-template-columns: 15% 70% 1fr;
     padding: 1em 0 1em 0;
-    position: sticky;
     width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 90;
     
    }
    .banner-content  h1 {
@@ -288,7 +291,9 @@ button {
        text-align: right;
        padding-right: 1em;
    }
-  
+   #positioning-fix {
+       margin-bottom: 5em;
+   }
 
 
 
