@@ -12,28 +12,33 @@
         const gameValue = gameSelect[gameSelect.selectedIndex].value;
      // the if statment
      if (gameValue == 'Xbox') {
-        xboxListing[0].style.display = 'inherit';
-            ps4Listing[0].style.display = 'none';
-            steamListing[0].style.display = 'none';
+            for (let i = 0; gameSelect.length; i++) {
+                 xboxListing[i].style.display = 'inherit';
+                 ps4Listing[i].style.display = 'none';
+                 steamListing[i].style.display = 'none';
+            }
         }
     if (gameValue == 'PS4') {
-            ps4Listing[0].style.display = 'inherit';
-            xboxListing[0].style.display = 'none';
-            steamListing[0].style.display = 'none';
+        for (let i = 0; gameSelect.length; i++) {
+            ps4Listing[i].style.display = 'inherit';
+            xboxListing[i].style.display = 'none';
+            steamListing[i].style.display = 'none';
+         }
         }
     if (gameValue == 'Steam') {
-            steamListing[0].style.display = 'inherit';
-            xboxListing[0].style.display = 'none';
-            ps4Listing[0].style.display = 'none';
+        for (let i = 0; gameSelect.length; i++) {
+            steamListing[i].style.display = 'inherit';
+            xboxListing[i].style.display = 'none';
+            ps4Listing[i].style.display = 'none';
+            } 
         }
     if (gameValue == 'Platform?') {
-            steamListing[0].style.display = 'inherit';
-            xboxListing[0].style.display = 'inherit';
-            ps4Listing[0].style.display = 'inherit';
-        }
-          
-            
-        
+        for (let i = 0; gameSelect.length; i++) {
+            steamListing[i].style.display = 'inherit';
+            xboxListing[i].style.display = 'inherit';
+            ps4Listing[i].style.display = 'inherit';
+            }   
+        } 
     })
 
 
