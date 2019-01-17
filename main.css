@@ -682,13 +682,13 @@ li {
 @media only screen and (min-width:414px) {
     /* Enlarging the text and shuffeling a few things around on the home page */
     .title-page-content img {
-        height: 655px;
+        height: 625px;
     }  
     .about-page-header {
-        height: 650px;
+        height: 625px;
     } 
     .about-page-header img {
-        height: 655px;
+        height: 625px;
     } 
     .main-content-wrapper h2 {
         font-size: 1.45em;
