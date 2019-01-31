@@ -1,10 +1,5 @@
-let width = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
+let width = window.screen.availWidth;
 
-let height = window.innerHeight
-|| document.documentElement.clientHeight
-|| document.body.clientHeight;
     
     console.log(width);
     if (width = 1440) {
