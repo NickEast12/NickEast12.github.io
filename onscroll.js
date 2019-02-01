@@ -8,11 +8,10 @@ if (screen.width >= 1440) {
         console.log(links);
         let ypos = window.pageYOffset;
             if (ypos > 250) {
-                top.style.height = '150px'
+                top.style.height = '140px'
                 top.style.backgroundColor = 'white';
                 top.style.borderBottom = 'solid black 2px';
                 logo[0].style.width = '450px';
-                logo[0].style.top = '50px';
                 button.style.border = "solid 2px rgb(16, 92, 177)";
                 button.style.color = 'rgb(16, 92, 177)';
                 for (let i = 0; links.length; i++) {
@@ -25,7 +24,7 @@ if (screen.width >= 1440) {
                 button.style.border = "solid 2px white";
                 button.style.color = 'white';
                 for (let i = 0; links.length; i++) {
-                    links[i].style.color = 'white';
+                    links[i].style.color = 'rgba(255, 255, 255, .6)';
                 }
             
             }

@@ -469,7 +469,10 @@ li {
     }
     #hr-no-show {
         display: none;
-    }s
+    }
+    .why-us {
+        display: none;
+    }
     /* ---------------- Contact Page -------------------
     -----------------------------------------------*/
     .contact-wrapper {
@@ -749,6 +752,12 @@ li {
     .legal-wrapper p {
         font-size: .85em;
         padding-bottom: 1.2em;
+    }
+    .office-locations {
+    margin: 1em;
+    }
+    .contact-wrapper {
+        padding-bottom: 3em;
     }
     
 }
@@ -1137,17 +1146,19 @@ li {
     #navbar {
         position: fixed;
         background-color: inherit;
-        z-index: 99999!important;
+        z-index: 100;
     }
     .header-wrapper {
         width: 100%;
         height: 100%;
+        position: relative;
+        z-index: 100;
     }
     .title-page-content {
         height: 100%;
     }
     .title-page-content img {
-        height: 900px;
+        height: 830px;
     }
     .title-page-content h1 {
     font-size: 2.5em;
@@ -1161,9 +1172,10 @@ li {
         text-align: center;
         margin: 0;
         padding: 0;
-        font-size: 1.1em;
+        font-size: 1em;
         list-style: none;
-        color: rgba(255, 255, 255, .6);
+        color: white;
+        text-shadow: none;
     }
     .header-wrapper nav ul li:hover {
         color: rgba(255, 255, 255, 1);
@@ -1182,11 +1194,200 @@ li {
     .header-logo {
         margin-right: 10em;
     }
-    .main-content-wrapper {
-        z-index: -100000000!important;
+    .main-content-wrapper h2 {
+        width: 80%;
+        text-align: center;
+        
     }
     .company-wrapper {
         position: relative;
         z-index: -1;
     }
+    .company-pictures {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .investment-approach-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 2em 0 2em 0;
+    }
+    .investment-approach-content p {
+        font-size: 1em;
+    }
+    .news-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footer-contact-inner h6 {
+        padding-bottom: 1em;
+    }
+    .footer-contact-inner p {
+        padding-bottom: 1em;
+    }
+    /* About page */ 
+    .about-page-header img {
+        height: 830px
+    }
+    .about-page-header h1 {
+        margin-left: 1em;
+    }
+    .about-page-main-title {
+        position: relative;
+        z-index: -19;
+    }
+    .about-page-main-title h2 {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.5em;
+        padding-bottom: 1em;
+
+    }
+    .about-page-main-title p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2em;
+        line-height: 40px;
+
+    }
+    .about-page-information {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background: rgba(16, 92, 177, .7);
+        position: relative;
+        z-index: -10;
+    }
+    .about-page-information-inner h2 {
+        font-size: 1.4em;
+    }
+    .about-page-information-inner p {
+        font-size: 1em;
+    }
+    .why-us {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mobile-why-inner h4 {
+        font-size: 1em;
+    }
+    .mobile-why-inner p {
+        font-size: .89em;
+    }
+    /* our vision page */ 
+    .our-vision-inner {
+        margin-top: 2em;
+        position: relative;
+        z-index: -10;
+    }
+    .our-vision-inner h1 {
+        font-size: 1.3em;
+    }
+    .our-vision-inner p {
+        font-size: 1em;
+    }
+    .our-vision-wrapper h5 {
+        font-size: 1.2em;
+        position: relative;
+        z-index: -1;
+    }
+    .our-vision-wrapper button {
+        font-size: 1em;
+        position: relative;
+        z-index: -1;
+    }
+    .testimonials-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+        z-index: -10;
+    }
+    .testimonials-wrapper h2 {
+        font-size: 1em;
+    }
+    .testimonials-inner p {
+        font-size: 1em;
+    }
+    .testimonials-inner img {
+        width: 250px;
+        height: 150px;
+        margin: 0;
+    }
+    /* the team page */ 
+    .our-team-wrapper h1 {
+        font-size: 1.5em;
+    }
+    .our-team-wrapper p {
+        font-size: 1.2em;
+    }
+    .team-members-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .team-left {
+        position: relative;
+        z-index: -10;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .team-left img {
+        width: 90%;
+        height: 380px;
+    }
+    .team-left h4 {
+        font-size: 1em;
+        margin-top: 2em;
+    }
+    .team-left h5 {
+        font-size: 1em;
+    }
+    .team-left p {
+        font-size: .9em;
+    }
+    .team-left hr {
+        width: 200%;
+    }
+    .team-right {
+        position: relative;
+        z-index: -10;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
+    }
+    .team-right img {
+        width: 90%;
+        height: 380px;
+        grid-area: b;
+    }
+    .team-right h4 {
+        font-size: 1em;
+        margin-top: 2em;
+    }
+    .team-right h5 {
+        font-size: 1em;
+    }
+    .team-right p {
+        font-size: .9em;
+        width: 90%;
+    }
+    .team-right hr {
+        width: 200%;
+    }
+    /* Contact page */
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        z-index: 5;
+    }
+    .contact-form-wrapper input {
+        font-size: .7em;
+    }
+    .contact-form-wrapper select {
+        font-size: .7em;
+    }
+    .contact-form-wrapper textarea {
+        font-size: .7em;
+    }
+    .contact-form-wrapper button {
+        font-size: .7em;
+    }
+
+    
 }
