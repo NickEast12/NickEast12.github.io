@@ -1,0 +1,23 @@
+{
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickEast12/new_portfolio.git"
+  },
+  "keywords": [],
+  "author": "Nick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickEast12/new_portfolio/issues"
+  },
+  "homepage": "https://github.com/NickEast12/new_portfolio",
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  }
+}

@@ -92,19 +92,6 @@ function psAnimationScroll  ()  {
 }
 window.addEventListener('scroll', psAnimationScroll);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     // gap plz
     // need to gather all links ids
 let links = [
@@ -122,4 +109,7 @@ for (let i = 0; i < links.length ;i++) {
     });
 }
 
-      
+// smooth scroll 
+logoLink.addEventListener('click', () => {
+    jump(".home-target");
+});
