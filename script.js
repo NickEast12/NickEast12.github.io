@@ -109,7 +109,3 @@ for (let i = 0; i < links.length ;i++) {
     });
 }
 
-// smooth scroll 
-logoLink.addEventListener('click', () => {
-    jump(".home-target");
-});

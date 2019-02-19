@@ -14,7 +14,7 @@
 <header class="main-page-header">
     <div class="navigation-wrapper" id="navWrapper">
         <div class="logo-wrapper">
-            <p id="logo"><a href=#home>N.East</a></p>
+            <p id="logo"><a>N.East</a></p>
         </div>
         <ul class="nav"> 
             <li>Home</li>
@@ -42,11 +42,11 @@
         <div class="mobile-nav-inner">
             <h3>Menu</h3>
             <ul>
-                    <li><a href="#" id="logoLink">Home</a></li>
-                    <li><a href="#" id="aboutMeLink">About Me</a></li>
-                    <li><a href="#" id="projectLink">Projects</a></li>
-                    <li><a  href="#" id="testiLink">Testimonials</a></li>
-                    <li><a href="#" id="contactLink">Contact</a></li>
+                    <li><a id="logoLink">Home</a></li>
+                    <li><a id="aboutMeLink">About Me</a></li>
+                    <li><a id="projectLink">Projects</a></li>
+                    <li><a id="testiLink">Testimonials</a></li>
+                    <li><a id="contactLink">Contact</a></li>
             </ul>
             <div>
                     <i class="fab fa-twitter"></i>
@@ -222,10 +222,39 @@
                   hamburger.classList.toggle("is-active");
                   // Do something else, like open/close menu
                 });
-        </script>
-        <script>
-            import jump from './node_modules/jump.js/dist/jump.module.js';
+                
+                
+                
         </script>
         <script type="text/javascript" src="./script.js"></script>
+        <script type="module">
+        // smooth scroll links
+        import jump from './node_modules/jump.js/dist/jump.module.js';
+         let homeButton = document.querySelector("#logoLink");
+            homeButton.addEventListener('click', () => {
+                jump('.home-target', {
+                    duration: 10,
+                });
+            });
+        let logoButton = document.querySelector('#logo');
+        logoButton.addEventListener('click', () => {
+            jump('.home-target', {
+                    duration: 10,
+                });
+        });
+        let aboutButton = document.querySelector('#aboutMeLink');
+        aboutButton.addEventListener('click', () => {
+            jump('.intro-wrapper', {
+                duration: 10,
+            })
+        });
+
+
+
+        //intro-wrapper
+        </script>
+        
+        
+
 </body>
 </html>
