@@ -222,10 +222,7 @@
                   // Toggle class "is-active"
                   hamburger.classList.toggle("is-active");
                   // Do something else, like open/close menu
-                });
-                
-                
-                
+                });   
         </script>
         <script type="text/javascript" src="./script.js"></script>
         <script type="module">
@@ -234,37 +231,35 @@
          let homeButton = document.querySelector("#logoLink");
             homeButton.addEventListener('click', () => {
                 jump('.home-target', {
-                    duration: 10,
+                    duration: 2000,
                 });
             });
         let logoButton = document.querySelector('#logo');
         logoButton.addEventListener('click', () => {
             jump('.home-target', {
-                    duration: 10,
+                    duration: 2000,
                 });
         });
         let aboutButton = document.querySelector('#aboutMeLink');
         aboutButton.addEventListener('click', () => {
             jump('.intro-wrapper', {
-                duration: 10,
+                duration: 2000,
             })
         });
         let projectButton = document.querySelector('#projectLink');
         projectButton.addEventListener('click', () => {
             jump('.projects-wrapper', {
-                duration: 50
+                duration: 2000
             });
         });
         let arrowDown = document.querySelector('#downArrow ');
         arrowDown.addEventListener('click', () => {
             jump('.intro-wrapper', {
-                duration: 10,
+                duration: 2000,
             })
         });
-
-        //intro-wrapper
         </script>
-        <script src="./node_modules/rellax/rellax.min.js"></script>
+       <script src="./node_modules/rellax/rellax.min.js"></script>
         <script>
                 // Also can pass in optional settings block
                 var rellax = new Rellax('.rellax', {
@@ -273,6 +268,8 @@
                 });
              
             </script>
+      
+
         
         
 
