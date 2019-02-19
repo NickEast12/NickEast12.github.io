@@ -35,7 +35,7 @@
         <span id="home" class="home-target"></span>
         <h1>Nick East</h1>
         <h2>Web Design | Development | Photography</h2>
-        <a href="#aboutMe"><i class="fas fa-angle-double-down" id="downArrow"></i></a>
+        <a><i class="fas fa-angle-double-down" id="downArrow"></i></a>
     </div>
     <!--Mobile Navigation-->
     <div class="mobile-navigation" id="mobileNav">
@@ -166,18 +166,19 @@
             </div>
         </div>
     </div>
-    <div class="call-to-action-wrapper">
-        <div>
-            <h4>Want to work on a project together?</h4>
-            <h3>Drop me a message below</h3>
-            <button>Contact</button>
+        <div class="call-to-action-wrapper ">
+            <img src="./pictures/call-to-action.jpeg" alt="nice and green" class="call-to-action-img rellax" data-rellax-speed="-2" data-rellax-percentage="-10.5">
+            <div>
+                <h4>Want to work on a project together?</h4>
+                <h3>Drop me a message below</h3>
+                <button>Contact</button>
+            </div>
         </div>
-    </div>
     <div class="projects-wrapper">
         <h3>My latest projects</h3>
         <p>Heres a collection of my latest proejcts</p>
         <div class="projects-container">
-            <div class="">
+            <div>
                 <div>
                     <h4>Project</h4>
                     <p>description</p>
@@ -248,11 +249,30 @@
                 duration: 10,
             })
         });
-
-
+        let projectButton = document.querySelector('#projectLink');
+        projectButton.addEventListener('click', () => {
+            jump('.projects-wrapper', {
+                duration: 50
+            });
+        });
+        let arrowDown = document.querySelector('#downArrow ');
+        arrowDown.addEventListener('click', () => {
+            jump('.intro-wrapper', {
+                duration: 10,
+            })
+        });
 
         //intro-wrapper
         </script>
+        <script src="./node_modules/rellax/rellax.min.js"></script>
+        <script>
+                // Also can pass in optional settings block
+                var rellax = new Rellax('.rellax', {
+                    center: true
+
+                });
+             
+            </script>
         
         
 

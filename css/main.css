@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: "Poppins", sans-serif;
 }
@@ -434,13 +430,18 @@ a, a:visited {
   }
   .call-to-action-wrapper {
     width: 100%;
+    height: 140px;
     margin-bottom: 1em;
-    background: black;
-    background-image: url(../pictures/call-to-action.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: initial;
+    position: relative;
     color: white;
+    overflow: hidden;
+  }
+  .call-to-action-wrapper img {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    height: 150%;
+    z-index: -99;
   }
   .call-to-action-wrapper div {
     width: 88%;
@@ -462,6 +463,9 @@ a, a:visited {
     padding: 3px 15px;
     letter-spacing: 1.25px;
     text-transform: uppercase;
+  }
+  .projects-wrapper {
+    margin: 50em 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
