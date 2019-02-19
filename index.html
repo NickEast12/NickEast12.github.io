@@ -1,193 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nick-East</title>
-    <link type="text/css" href="./css/main.css" rel="stylesheet">
-    <link>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,100" rel="stylesheet">
-    <link href="node_modules/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
-</head>
-<header class="main-page-header">
-    <div class="navigation-wrapper" id="navWrapper">
-        <div class="logo-wrapper">
-            <p id="logo"><a>N.East</a></p>
-        </div>
-        <ul class="nav"> 
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Testimonials</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-    <div class="mobile-menu-wrapper">
-        <button class="hamburger hamburger--spin" type="button" id="mobileMenu">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-        </button>
-</div>
-    <div class="title-wrapper">
-        <span id="home" class="home-target"></span>
-        <h1>Nick East</h1>
-        <h2>Web Design | Development | Photography</h2>
-        <a><i class="fas fa-angle-double-down" id="downArrow"></i></a>
-    </div>
-    <!--Mobile Navigation-->
-    <div class="mobile-navigation" id="mobileNav">
-        <div class="mobile-nav-inner">
-            <h3>Menu</h3>
-            <ul>
-                    <li><a id="logoLink">Home</a></li>
-                    <li><a id="aboutMeLink">About Me</a></li>
-                    <li><a id="projectLink">Projects</a></li>
-                    <li><a id="testiLink">Testimonials</a></li>
-                    <li><a id="contactLink">Contact</a></li>
-            </ul>
-            <div>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-linkedin-in"></i>
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ocean Capital</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="CSS/owlcarousel/assets/owl.theme.default.min.css">
+        <link href="./CSS/hamburgers.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <header>
+        <div class="header-wrapper">
+            <nav id="navbar">
+                <ul>
+                    <a href="./index.html"><li><img src="./pictures/ocean-capital-logo-1.png" class="header-logo"></li></a>
+                    <a href="./about-us.html" class="no-show-mobile"><li class="no-show-mobile">About Us</li></a>
+                    <a href="./our-vision.html" class="no-show-mobile"><li class="no-show-mobile">Our Vision</li></a>
+                    <a href="./team.html" class="no-show-mobile"><li class="no-show-mobile">Our People</li></a>
+                    <a href="./contact.html" class="no-show-mobile"><li class="no-show-mobile">Contact</li></a>
+                    <li class="no-show-mobile"><button id="navigation-button">Investors</button></li>
+                </ul>
+                <button class="hamburger hamburger--collapse" type="button" id="mobileMenu">
+                    <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </nav>
+            <div class="owl-carousel" id="test">
+                <div class="title-page-content">
+                    <img src="./pictures/ocean1.jpg">
+                    <h1>Value-oriented global macro manager</h1>
+                </div>
+                <div class="title-page-content">
+                        <img src="./pictures/ocean2.jpg">
+                        <h1>Creative solutions that work</h1>
+                </div>
+                <div class="title-page-content">
+                        <img src="./pictures/ocean5.jpg">
+                        <h1>Backing entrepreneurs who are transforming industries</h1>
+                </div>
             </div>
+            <div class="mobile-menu-overlay" id="mobileOverlay">
+                    <ul>
+                            <a href="./about-us.html"><li>About Us</li></a>
+                            <a href="./our-vision.html"><li>Our Vision</li></a>
+                            <a href="./team.html"><li>Our People</li></a>
+                            <a href="./contact.html"><li>Contact</li></a>
+                            <button class="contact-button">Investors Login</button>
+                    </ul>
+        
+             </div>
         </div>
-    </div>
-</header>
-<body>
-    <div class="intro-wrapper">
-        <span id="aboutMe"></span>
-        <div class="about-me-wrapper">
-            <h2>About Me</h2>
-            <div class="about-me-inner">
-                <img src="./pictures/metemplate.jpg" alt="a picture of me">
-                <p>some words some words some words some words some words some words some words some words</p>
-            </div>
-        </div>
-        <div class="skills-exp-wrapper">
-            <div class="skills">
-                <h2 id="skills">My Skills</h2>
-                <div class="skill-bar">
-                    <div class="skill-bar-inner" id="htmlSkill">
-                            <p>HTML + CSS</p>
+        <script src="./desktop-slide.js" type="text/javascript"></script>
+        <script src="./onscroll.js" type="text/javascript"></script>
+    </header>
+    <body>
+        <div class="main-content-wrapper">
+            <h2><span class="title-colour">Ocean Capital</span> is an independent investment management firm focused on new tech start-ups.</h2>
+            <hr class="break-up">
+            <h3>Some of the great teams we have backed</h3>
+            <div class="company-pictures">
+                <div class="company-wrapper boxA">
+                    <img src="./pictures/very-green copy.jpg">
+                    <div class="company-wrapper-inner">
+                        <img src='./pictures/newTwitch.png' data-aos="fade-down">
                     </div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-inner" id="javascriptSkill">
-                            <p>Javascript + JQuery</p>
+                <div class="company-wrapper boxB smaller-box">
+                    <img src="./pictures/office2.jpg">
+                    <div class="company-wrapper-inner">
+                        <img src='./pictures/2000px-Revolut.png' data-aos="fade-down">
                     </div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-inner" id="SASSskill">
-                            <p>SASS</p>
+                <div class="company-wrapper boxC smaller-box">
+                    <img src="./pictures/ocean1.jpg">
+                    <div class="company-wrapper-inner">
+                        <img src='./pictures/nutcracker.png' data-aos="fade-down">
                     </div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-inner" id="gitskill">
-                            <p>GIT</p>
+                <div class="company-wrapper boxD smaller-box">
+                    <img src="./pictures/ocean2.jpg">
+                    <div class="company-wrapper-inner">
+                        <img src='./pictures/bbh.png' id="logo-correction" data-aos="fade-down">
                     </div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-inner" id="PhotoshopSkill">
-                            <p>Photoshop</p>
+                <div class="company-wrapper boxE smaller-box">
+                    <img src="./pictures/ocean3.jpg">
+                    <div class="company-wrapper-inner">
+                        <img src='./pictures/Logo-copy.png' id="logo-correction2" data-aos="fade-down">
                     </div>
                 </div>
-            </div>
-            <div class="exp">
-                <h2>Experience</h2>
-                <div class="experience-inner">
-                        <div class="exp-cards">
-                            <h4>Work Title</h4>
-                            <p>Business Name <span>2000-2000</span></p>
-                        </div>
-                        <div class="exp-cards">
-                            <h4>Work Title</h4>
-                            <p>Business Name <span>2000-2000</span></p>
-                        </div>
-                        <div class="exp-cards">
-                            <h4>Work Title</h4>
-                            <p>Business Name <span>2000-2000</span></p>
-                        </div>
-                        <div class="exp-cards">
-                            <h4>Work Title</h4>
-                            <p>Business Name <span>2000-2000</span></p>
-                        </div>
-                </div>
+                
             </div>
         </div>
-        <div class="banner">
-            <div class="banner-inner">
-                <h4>1.5</h4>
-                <p>Years</p>
+        <hr class="page-break">
+        <div class="investment-approach">
+            <h3>Our Investment Approach</h3>
+            <div class="investment-approach-wrapper">
+                <div class="investment-approach-content">
+                    <div>
+                        <img src="./pictures/Icon-lock.png">
+                    </div>
+                    <p>Security &amp; Data</p>
+                </div>
+                <div class="investment-approach-content">
+                    <div>
+                        <img src="./pictures/Icon-software.png">
+                    </div>
+                    <p>New Software</p>
+                </div>
+                <div class="investment-approach-content investment-fix">
+                    <div>
+                        <img src="./pictures/Icon-cloud.png">
+                    </div>
+                        <p>Internet &amp; Cloud</p>
+                </div>
+                <div class="investment-approach-content">
+                    <div>
+                        <img src="./pictures/Icon-money.png">
+                    </div>
+                    <p>Fintech &amp; eCommerce</p>
+                </div>
+                <div class="investment-approach-content">
+                    <div>
+                        <img src="./pictures/robot-icon.png">
+                    </div>
+                    <p>AI &amp; Machine Learning</p>
+                </div>
+
+                <div class="investment-approach-content">
+                    <div>
+                        <img src="./pictures/Icon-science.png">
+                    </div>
+                    <p>New Science</p>
+                 </div>
+
+
+                </div>
+        </div>
+        <hr class="page-break">
+
+        <div class="news-wrapper">
+            <h3>Recent News</h3>
+            <div class="news-content">
+                <div class="news-content-inner">
+                    <img src="./pictures/office3.jpg">
+                    <i>6th January 2019</i>
+                    <p>Meet <span>Scott Dobinson</span> our new CEO he joins from a lenghty career at Croydon Council</p>
+                </div>
+                <div class="news-content-inner">
+                        <img src="./pictures/ocean2.jpg">
+                        <i>15th December 2018</i>
+                        <p>Following a very sucessful year for Ocean Capital we wish you a very merry Christmas &amp; Happy New Year!</p>
+                </div>
+                <div class="news-content-inner">
+                        <img src="./pictures/office2.jpg">
+                        <i>1st November 2018</i>
+                        <p>We are glad to announce that Ocean Capital have just backed a brand new tech start-up out of Amsterdam.</p>
+                </div>
+                <div class="news-content-inner">
+                    <img src="./pictures/office1.jpg">
+                    <i>24th October 2018</i>
+                    <p>After months of negotiation we have finally found spaces in Pall Mall! </p>
             </div>
-            <div class="banner-inner">
-                <h4>14</h4>
-                <p>Projects</p>
-            </div>
-            <div class="banner-inner">
-                <h4>1</h4>
-                <p>Client</p>
-            </div>
-            <div class="banner-inner">
-                <h4>?</h4>
-                <p>?????</p>
             </div>
         </div>
-    </div>
-    <div class="middle-wrapper">
-        <div class="services">
-            <div class="services-info">
-                <h3>My Services</h3>
-                <p>some words some words some wordssome words some words some words some words some words some words</p>
-            </div>
-            <div class="services-cards-wrapper">
-                <div class="services-cards">
-                        <i class="fas fa-file-code"></i>
-                        <h4>Web Design + Development</h4>
-                        <p>description of what i do</p>
-                </div>
-                <div class="services-cards">
-                    <i class="fab fa-css3-alt"></i>
-                    <h4>CSS Animation</h4>
-                    <p>description of what i do</p>
-                </div>
-                <div class="services-cards">
-                    <i class="fas fa-desktop"></i>
-                    <h4>Responsive Design</h4>
-                    <p>description of what i do</p>
-                </div>
-                <div class="services-cards">
-                    <i class="fas fa-camera"></i>
-                    <h4>Photography</h4>
-                    <p>description of what i do</p>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="call-to-action-wrapper ">
-            <img src="./pictures/call-to-action.jpeg" alt="nice and green" class="call-to-action-img rellax" data-rellax-speed="-2" data-rellax-percentage="-10.5">
-            <div>
-                <h4>Want to work on a project together?</h4>
-                <h3>Drop me a message below</h3>
-                <button>Contact</button>
-            </div>
-        </div>
-    <div class="projects-wrapper">
-        <h3>My latest projects</h3>
-        <p>Heres a collection of my latest proejcts</p>
-        <div class="projects-container">
-            <div>
-                <div>
-                    <h4>Project</h4>
-                    <p>description</p>
-                    <button>Visit Project</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
 
 
 
@@ -199,79 +181,54 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script>
-                // Look for .hamburger
-                var hamburger = document.querySelector(".hamburger");
-                // On click
-                hamburger.addEventListener("click", function() {
-                  // Toggle class "is-active"
-                  hamburger.classList.toggle("is-active");
-                  // Do something else, like open/close menu
-                });   
-        </script>
-        <script type="text/javascript" src="script.js"></script>
-        <script type="module">
-        // smooth scroll links
-        import jump from './node_modules/jump.js/dist/jump.module.js';
-         let homeButton = document.querySelector("#logoLink");
-            homeButton.addEventListener('click', () => {
-                jump('.home-target', {
-                    duration: 2000,
+        
+            <script>
+                    // Look for .hamburger
+                    var hamburger = document.querySelector(".hamburger");
+                    // On click
+                    hamburger.addEventListener("click", function() {
+                      // Toggle class "is-active"
+                      hamburger.classList.toggle("is-active");
+                      // Do something else, like open/close menu
+                    });
+                  </script>
+            <script src="CSS/jquery3.3.1-min.js"></script>
+            <script src="CSS/owlcarousel/owl.carousel.min.js"></script>  
+           <script type="text/javascript">
+            $(document).ready(function(){
+                  $(".owl-carousel").owlCarousel();
                 });
-            });
-        let logoButton = document.querySelector('#logo');
-        logoButton.addEventListener('click', () => {
-            jump('.home-target', {
-                    duration: 2000,
-                });
-        });
-        let aboutButton = document.querySelector('#aboutMeLink');
-        aboutButton.addEventListener('click', () => {
-            jump('.intro-wrapper', {
-                duration: 2000,
-            })
-        });
-        let projectButton = document.querySelector('#projectLink');
-        projectButton.addEventListener('click', () => {
-            jump('.projects-wrapper', {
-                duration: 2000
-            });
-        });
-        let arrowDown = document.querySelector('#downArrow ');
-        arrowDown.addEventListener('click', () => {
-            jump('.intro-wrapper', {
-                duration: 2000,
-            })
-        });
-        </script>
-       <script src="node_modules/rellax/rellax.min.js"></script>
-        <script>
-                // Also can pass in optional settings block
-                var rellax = new Rellax('.rellax', {
-                    center: true
 
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                items:1,
+                loop:true,
+                autoplay:true,
+                autoplayTimeout:8000,
+                autoplayHoverPause:true
                 });
-             
+            
             </script>
-      
-
-        
-        
-
-</body>
-</html>
+            <script src="./script.js" type="text/javascript"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                    AOS.init();
+            </script>
+    </body>
+    <footer class="main-footer">
+        <div class="footer-contact">
+            <div class="footer-contact-inner">
+                <h5>Contact us.</h5>
+                <h6>Call or email our head office in London:</h6>
+                <p>+44 ( 0 ) 20 3872 2410<span class="the-dot">.</span>info@ocean-captial.com</p>
+                <bold class="location-links">See all our locations</bold>
+            </div>
+            <hr class="footer-line-break">
+            <div class="legal-wrapper">
+                <p>Ocean Capital LLP is authorised and regulated by the Financial Conduct Authority.</p>
+                <br>
+                <p>&copy; 2019 Ocean Capital LLP. All Rights Reserved. Use of this Website is governed by the Terms of Use. <br>Privacy notice.</p>
+            </div>
+        </div>
+    </footer>
+</html> 
