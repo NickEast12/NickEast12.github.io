@@ -30,10 +30,12 @@ let ypos;
                 logo.style.backgroundColor = 'black';
                 logo.style.color = 'white';
                 navWrapper.style.backgroundColor = "#f5f5f5";
+                navWrapper.style.borderBottom = "solid black 2px";
                 }else{
                     logo.style.backgroundColor = 'white';
                     logo.style.color = 'black';
                     navWrapper.style.backgroundColor = "transparent";
+                    navWrapper.style.borderBottom = "solid transparent 2px";
             }
     }
     window.addEventListener('scroll', Scroll); 
