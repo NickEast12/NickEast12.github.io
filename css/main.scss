@@ -563,7 +563,7 @@ a, a:visited {
             background: $alternativeColor;
             color: white;
             padding: 5px 8px;
-            border: solid lighten(#333, 10) .6px;
+            border: solid lighten(#333, 10) 1px;
             border-radius: .5px;
         }
         textarea {
@@ -574,7 +574,7 @@ a, a:visited {
             background: $alternativeColor;
             color: white;
             padding: 3px 5px;
-            border: solid lighten(#333, 10) .6px;
+            border: solid lighten(#333, 10) 1px;
             border-radius: .5px;
         }
       .button-div {
@@ -678,7 +678,7 @@ a, a:visited {
            font-size: 3em;
        }
        p {
-           font-size: 1.15em;
+           font-size: 1em;
         
        }
    }
