@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nick-East</title>
     <link type="text/css" href="css/main.css" rel="stylesheet">
-    <link>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,100" rel="stylesheet">
     <link href="/hamburgers.min.css" rel="stylesheet">
@@ -303,7 +302,7 @@
         <script type="text/javascript" src="./script.js"></script>
         <script type="module">
             // smooth scroll links
-            import jump from '/node_modules/jump.js/dist/jump.module.js';
+            import jump from '/jump.module.js';
             let homeButton = document.querySelector("#logoLink");
                 homeButton.addEventListener('click', () => {
                     jump('.home-target', {
@@ -355,7 +354,7 @@
                             })
                     });
         </script>
-        <script src="./node_modules/rellax/rellax.min.js"></script>
+        <script src="/rellax.min.js"></script>
         <script>
                     // Also can pass in optional settings block
                     var rellax = new Rellax('.rellax', {
@@ -622,7 +621,7 @@
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZv1fnBqcp2DgeJcO-kXK4MeMyuXzBiqk
             &callback=initMap"></script>
             <script type="module">
-            import jump from '/node_modules/jump.js/dist/jump.module.js';
+            import jump from '/jump.module.js';
              let backToHome = document.querySelector('#toHomeButton');
             backToHome.addEventListener('click', () => {
                 jump('.home-target', {
