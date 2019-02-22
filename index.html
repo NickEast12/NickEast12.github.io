@@ -375,13 +375,13 @@
                             <p><i class="fab fa-linkedin"></i>LinkedIn</p>
                             </div>
                         <div class="form">
-                            <from>
-                                <label>First Name</label><input type="text" class="first-name" placeholder="">
-                                <label>Last Name</label><input type="text" class="last-name" placeholder="">
-                                <label>Email Address</label><input type="email"class="email" placeholder="">
-                                <label>What do you want to say?</label><textarea placeholder=""></textarea>
+                            <form action="contactform.php" method="post">
+                                <label>First Name</label><input type="text" class="first-name" placeholder="" name="name">
+                                <label>Last Name</label><input type="text" class="last-name" placeholder="" name="last">
+                                <label>Email Address</label><input type="email"class="email" placeholder="" name="email">
+                                <label>What do you want to say?</label><textarea placeholder="" name="message"></textarea>
                                 <div class="button-div"><button>Submit</button></div>
-                            </from>
+                            </form>
                         </div>
                 </div>
         </div>
