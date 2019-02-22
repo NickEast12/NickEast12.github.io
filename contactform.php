@@ -1,10 +1,10 @@
 <?php
 
-if  (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $lastname = $_POST['last'];
-    $mailFrom = $_POST['email'];
-    $message = $_POST['message'];
+if  (isset($_GET['submit'])) {
+    $name = $_GET['name'];
+    $lastname = $_GET['last'];
+    $mailFrom = $_GET['email'];
+    $message = $_GET['message'];
 
     $mailTo = "nick_east@yahoo.com";
     $headers = "From: ".$mailFrom;
