@@ -693,21 +693,18 @@ a, a:visited {
 }
 
 @media only screen and (min-width: 375px) {
-  body {
-    font-size: .9em;
-  }
   .title-wrapper {
     margin-top: 10em;
   }
   .title-wrapper h1 {
-    font-size: 3.35em;
+    font-size: 2.35em;
   }
   .title-wrapper h2 {
     font-size: .9em;
   }
   .title-wrapper i {
-    margin-top: 3.5em;
-    font-size: 3.5em;
+    margin-top: 5em;
+    font-size: 3em;
   }
   .mobile-navigation .mobile-nav-inner h3 {
     font-size: 2em;
@@ -724,11 +721,8 @@ a, a:visited {
   .about-me-wrapper .about-me-inner p {
     font-size: 1em;
   }
-  .skills .skill-bar {
-    padding: 10px 0;
-  }
   .skills .skill-bar-inner p {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   .exp-cards {
     font-size: 1.2em;
@@ -756,11 +750,18 @@ a, a:visited {
     margin: 4em 0;
     height: 117px;
   }
+  .projects-wrapper .projects-container .projects .projects-overlay {
+    height: 210%;
+  }
   .testimonials {
-    font-size: 1.2em;
+    font-size: 1.25em;
+    padding: 5em  1.5em;
   }
   .footer-container {
     font-size: 1.25em;
+  }
+  .form label {
+    font-size: .8em;
   }
 }
 /*# sourceMappingURL=main.css.map */
