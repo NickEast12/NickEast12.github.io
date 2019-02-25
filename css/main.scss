@@ -634,6 +634,9 @@ a, a:visited {
   }
   @media only screen and (min-width:375px) {
    // mobile styles for larger screen sizes e.g Iphone 6
+   body {
+       font-size: .9em;
+   }
    // increasing main title font-size and placement
    .title-wrapper {
         margin-top: 10em;
