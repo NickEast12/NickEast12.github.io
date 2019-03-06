@@ -3,15 +3,16 @@ $mainFontWright: 700;
 $marginAuto: 0 auto;
 $mainBackground: #f5f5f5;
 $alternativeColor: #333;
-
-// #757575 charcoal 
-// #c4c4c4 light gray still pretty dark though but lighter than the other gray 
+$desktopWidth : 80%;
+$maxWidth : 1450px;
+// #757575 charcoal
+// #c4c4c4 light gray still pretty dark though but lighter than the other gray
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 h1, h2, h3, h4, h5, h6, p , a {
     font-family: $mainFont;
@@ -70,7 +71,7 @@ a, a:visited {
         width: 60%;
     }
 }
-  
+
 
 @media only screen and (min-width:320px) {
     // naviagtion + title + mobile menu
@@ -86,7 +87,6 @@ a, a:visited {
         position: relative;
         overflow: hidden;
     }
-
     .navigation-wrapper {
         display: grid;
         position: relative;
@@ -95,8 +95,8 @@ a, a:visited {
         position: fixed;
         width: 100%;
         top: 0;
-        z-index: 20; 
-        transition: all .5s ease;
+        z-index: 20;
+        transition: all .4s ease;
         .nav {
             display: none;
         }
@@ -164,7 +164,7 @@ a, a:visited {
                 border-bottom: solid white 3px;
                 padding-bottom: .5em;
                 width: 100%;
-                
+
             }
             ul {
                 list-style: none;
@@ -191,7 +191,7 @@ a, a:visited {
                     border-radius: 5px;
                     cursor: pointer;
                 }
-            } 
+            }
         }
     }
 // main wrappper
@@ -199,7 +199,7 @@ a, a:visited {
     background: $mainBackground;
     overflow: hidden
 }
-  // about me wrapper 
+  // about me wrapper
   .about-me-wrapper {
       width: 88%;
       margin: $marginAuto;
@@ -219,7 +219,7 @@ a, a:visited {
         }
       }
   }
-  // skills 
+  // skills
   .skills {
       width: 88%;
       margin: 1.5em auto;
@@ -250,11 +250,11 @@ a, a:visited {
             left: 4px;
             width: 200px;
             font-weight: normal;
-            
+
         }
-        
+
     }
-   
+
     .javascript-skill-animation {
         animation: skill1 1s ease .5s 1 forwards ;
     }
@@ -270,7 +270,7 @@ a, a:visited {
     .ps-skill-animation {
         animation: skill5 1.9s ease .5s 1 forwards ;
     }
-    
+
   }
   // experience
   .exp {
@@ -323,7 +323,7 @@ a, a:visited {
           p {
               font-size: .9em;
               font-weight: 100;
-              
+
           }
       }
     }
@@ -367,13 +367,13 @@ a, a:visited {
                         font-size: 1em;
                         font-family: Raleway;
                         width: 98%;
-                        
+
 
                     }
             }
         }
     }
-    // call to action banner 
+    // call to action banner
     .call-to-action-wrapper {
         width: 100%;
         height: 140px;
@@ -394,8 +394,8 @@ a, a:visited {
                h4 {
                    font-size: .9em;
                    font-weight: 400;
-               } 
-            
+               }
+
                button {
                    color: black;
                    margin: 1em 0 0 0 ;
@@ -410,12 +410,12 @@ a, a:visited {
                }
             }
     }
-    // lower wrapper 
+    // lower wrapper
      .lower-wrapper {
          background: $mainBackground;
          padding-top: 2em;
      }
-    // Projects 
+    // Projects
     .projects-wrapper {
         width: 88%;
         margin: 0 auto;
@@ -452,8 +452,9 @@ a, a:visited {
                         opacity: 0;
                         z-index: 10;
                         text-align: center;
-                        background: rgba(255, 255, 255, 1);
-                        padding: 9% 0; 
+                        background: #333;
+                        color: white;
+                        padding: 9% 0;
                         position: absolute;
                         transition: opacity 1s ease-in-out;
                         top: 0;
@@ -461,8 +462,8 @@ a, a:visited {
                             font-size: 1.2em;
                         }
                         button {
-                            background: black;
-                            color: white;
+                            background: white;
+                            color: #333;
                             font-family: poppins;
                             padding: 5px 15px;
                             font-size: .8em;
@@ -474,8 +475,8 @@ a, a:visited {
                     opacity: 1;
                 }
             }
-        
-        
+
+
     }
     //testimonials
     .testimonials {
@@ -521,11 +522,11 @@ a, a:visited {
             }
         }
     }
-    //footer 
+    //footer
     footer {
         background: #333;
         color: white;
-    
+
     .footer-container {
         width: 88%;
         padding: 1.5em 0;
@@ -626,7 +627,7 @@ a, a:visited {
             transform: rotate(-45deg);
         }
     }
-    
+
 }
 
 
@@ -647,7 +648,7 @@ a, a:visited {
             margin-top: 5em;
             font-size: 3em;
         }
-   }   
+   }
    .mobile-navigation {
 
     .mobile-nav-inner {
@@ -657,7 +658,7 @@ a, a:visited {
         ul {
 
             li {
-                font-size: 1.1em; 
+                font-size: 1.1em;
             }
         }
         div {
@@ -670,22 +671,22 @@ a, a:visited {
    // about me section
    .about-me-wrapper {
 
-   
-   
+
+
    .about-me-inner {
        h2 {
            font-size: 3em;
        }
        p {
            font-size: 1em;
-        
+
        }
    }
 }
-// skills 
+// skills
 .skills {
     .skill-bar {
-        
+
     }
     .skill-bar-inner {
         p {
@@ -701,11 +702,11 @@ a, a:visited {
 .banner {
     font-size: 1.2em;
 }
-// services 
+// services
 .services {
     font-size: 1.15em;
 }
-// call to action banner 
+// call to action banner
 .call-to-action-wrapper  {
     height: 170px;
     div {
@@ -716,10 +717,7 @@ a, a:visited {
 .projects-wrapper {
     font-size: 1.25em;
     .projects-container {
-        #margin-fix{
-            padding: 0;
-            margin: 1.5em 0;
-        }
+
         .projects {
             margin: 4em 0;
             height: 117px;
@@ -727,10 +725,10 @@ a, a:visited {
                 height: 210%;
             }
         }
-       
+
     }
-    
-    
+
+
 }
 // testimonials
 .testimonials {
@@ -741,12 +739,386 @@ a, a:visited {
  .footer-container {
      font-size: 1.25em;
  }
- 
+
      .form label {
          font-size: .8em;
-         
+
 
      }
 
 
   }
+
+@media only screen and (min-width:1440px) {
+    //Styling for larger screen of 1440px so desktops mon!
+    // the navigation
+    .navigation-wrapper {
+        grid-template-columns: 1fr 500px;
+        width: 100%;
+        padding: 1em 10%;
+        text-align: center;
+        .nav {
+            display: block;
+            list-style: none;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            font-size: 1.25em;
+            font-family: poppins;
+            li {
+                padding-top: 1.2em;
+                font-size: .8em;
+                text-align: left;
+                width: 100px;
+                text-align: center;
+                color: rgba(255, 255, 255, .5);
+                transition: .4s color ease;
+                cursor: pointer;
+            }
+            li:hover {
+                color: rgba(255, 255, 255, 1)
+            }
+        }
+  }
+  .mobile-menu-wrapper {
+    display: none;
+}
+#mobileNav {
+    display: none;
+}
+// header background
+.main-page-header {
+    background-attachment: fixed;
+
+}
+// title
+.title-wrapper {
+    width: 80%;
+    margin: 14em auto 0 auto ;
+    h1 {
+        font-size: 3.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    i {
+        font-size: 3.5em;
+        margin-top: 5em;
+    }
+}
+// about me wrapper
+.about-me-wrapper {
+    // margin-top: 2em;
+    width: $desktopWidth;
+
+    h2 {
+        font-size: 3em;
+    }
+    .about-me-inner {
+        display: grid;
+        margin-top: 1em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
+        grid-gap: 5%;
+        img {
+            grid-area: b;
+            width: 100%;
+            padding: 0 5%;
+            height: 300px;
+            margin: -5em 0 0 0 ;
+            padding: 0;
+
+        }
+        p {
+            grid-area: a;
+            font-size: 1.1em;
+        }
+    }
+}
+// now for the skills & exp
+// the main wrapper to display grid
+.skills-exp-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3%;
+        width: $desktopWidth;
+        margin: 1em auto 0 auto;
+
+        .skills {
+            margin: 0 ;
+            h2 {
+                font-size: 3em;
+                margin: 0;
+            }
+            .skill-bar {
+                height: 35px;
+                    .skill-bar-inner {
+                        height: 100%;
+                        p {
+                            font-size: 1.25em;
+                        }
+                    }
+            }
+        }
+}
+// exp wrapper
+.exp {
+    margin: 0;
+    width: 100%;
+    h2 {
+        font-size: 3em;
+    }
+ .experience-inner {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 5x;
+     margin-right: 0;
+        .exp-cards {
+            width: 100%;
+        }
+ }
+}
+// the bannner
+.banner {
+    height: 220px;
+    margin: 3em 0;
+        .banner-inner {
+            font-size: 1.5em;
+        }
+}
+// my services
+.services {
+    display: grid;
+    width: $desktopWidth;
+    grid-template-columns: 1fr 65%;
+    grid-gap: 2%;
+    padding-bottom: 4em;
+    .services-info {
+
+        h3 {
+        font-size: 3em;
+        }
+    }
+    .services-cards-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
+
+
+
+
+
+}
+// call to action wrapper
+.call-to-action-wrapper {
+    background-image: url(/pictures/call-to-action.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 15em;
+    padding: 0 6%;
+    img {
+        display: none;
+    }
+    div {
+        font-size: 1.8em;
+        padding: 1em 0;
+        button {
+            font-size: .6em;
+        }
+    }
+}
+// projects
+.projects-wrapper {
+    margin-top: 2em;
+    width: $desktopWidth;
+    h3 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1em;
+        margin-bottom: 2.5em;
+    }
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px 250px;
+        grid-template-areas:
+        "a a b b"
+        "c d e f" ;
+        grid-gap: 10px;
+
+        .projects {
+            margin: 0;
+            padding: 0;
+
+        }
+        .p-1 {
+            grid-area: a;
+            .project-pictures-wrapper {
+                img {
+                    height: 400px;
+                }
+            }
+            .projects-overlay {
+                height: 342%;
+                padding-top: 6em;
+            }
+        }
+        .p-2 {
+            grid-area: b;
+            .project-pictures-wrapper {
+                img {
+                    height: 400px;
+                }
+            }
+            .projects-overlay {
+                height: 342%;
+                padding-top: 6em;
+
+            }
+        }
+        .p-3 {
+            grid-area: c;
+            .projects-overlay {
+                height: 189px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .p-4 {
+            grid-area: d;
+            .projects-overlay {
+                height: 189px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .p-5 {
+            grid-area: e;
+            .projects-overlay {
+                height: 189px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .p-6 {
+            grid-area: f;
+            .projects-overlay {
+                height: 189px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+// testimonials
+.testimonials {
+    padding: 2em 8%;
+    background-attachment: fixed;
+    h4 {
+        font-size: 2.5em;
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        font-size: 1.1em;
+        margin: .5em 0 1.5em 0;
+    }
+    .testimonials-cards {
+        padding: .5em;
+        .testi-inner {
+            img {
+                width: 70px;
+                margin:  -1em 0 0 0;
+                padding: 0;
+            }
+            div {
+                h4 {
+
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+
+                }
+
+            }
+
+        }
+        .testimonials-description {
+            font-size: .9em;
+        }
+    }
+}
+// footer
+footer {
+.footer-container {
+    width: $desktopWidth;
+    padding: 2.5em 0;
+    h3 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: .8em;
+        margin-bottom: 1.5em;
+    }
+    .form-map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+
+        .contact {
+            padding: 0;
+            margin: 0;
+        }
+        .form {
+            margin: 0;
+            padding: 0;
+            form {
+                font-size: .8em;
+                ::placeholder {
+                    color: #b3b3b3;
+                }
+                .first-name, .last-name {
+                    width: 49%;
+                    display: inline-block;
+                }
+                #submit-button {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+.lower-footer {
+    .up-arrow-wrapper {
+        right: 49%;
+    }
+    p {
+        font-size: .9em;
+    }
+}
+
+}
+}
+@media only screen and (min-width:1550px)  {
+   // setting the max width to element to make it look okay on larger screens
+
+   .main-page-header {
+
+   }
+   .navigation-wrapper {
+        max-width: $maxWidth;
+        .nav {
+            max-width: $maxWidth;
+        }
+}
+}

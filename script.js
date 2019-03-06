@@ -14,6 +14,8 @@ let sassSkill = document.getElementById('SASSskill');
 let gitSkill = document.getElementById('gitskill');
 let psSkill = document.getElementById('PhotoshopSkill');
 let ypos;
+let mainNav = [];
+mainNav = document.querySelectorAll('.nav li a');
 
 // display mobile nav
     hamButton.addEventListener('click', () => {
@@ -29,16 +31,14 @@ let ypos;
             if (ypos > 100) {
                 logo.style.backgroundColor = 'black';
                 logo.style.color = 'white';
-                navWrapper.style.backgroundColor = "#f5f5f5";
-                navWrapper.style.borderBottom = "solid black 2px";
+                navWrapper.style.backgroundColor = "#333";
                 }else{
                     logo.style.backgroundColor = 'white';
                     logo.style.color = 'black';
                     navWrapper.style.backgroundColor = "transparent";
-                    navWrapper.style.borderBottom = "solid transparent 2px";
             }
     }
-    window.addEventListener('scroll', Scroll); 
+    window.addEventListener('scroll', Scroll);
 
 // skill bar animations
 
@@ -48,11 +48,10 @@ let ypos;
         if (ypos > 540) {
                 javascriptSkill.classList.add("javascript-skill-animation");
         }else {
-            javascriptSkill.classList.remove("javascript-skill-animation"); 
+            javascriptSkill.classList.remove("javascript-skill-animation");
         }
     }
     window.addEventListener('scroll', javascriptAnimationScroll);
-
     // html skill
 function htmlAnimationScroll  ()  {
     ypos = window.pageYOffset;
@@ -63,7 +62,7 @@ function htmlAnimationScroll  ()  {
     }
 }
 window.addEventListener('scroll', htmlAnimationScroll);
-// sass skill 
+// sass skill
 function sassAnimationScroll  ()  {
     ypos = window.pageYOffset;
     if (ypos > 560) {
@@ -73,7 +72,7 @@ function sassAnimationScroll  ()  {
     }
 }
 window.addEventListener('scroll', sassAnimationScroll);
-// git skill 
+// git skill
 function gitAnimationScroll  ()  {
     ypos = window.pageYOffset;
     if (ypos > 570) {
@@ -111,3 +110,15 @@ for (let i = 0; i < links.length ;i++) {
     });
 }
 
+    for (let i = 0; i < mainNav.length; i++) {
+        mainNav[i].addEventListener('mouseover', () => {
+            mainNav[i].style.color = "rgba(255, 255, 255, 1)";
+            mainNav[i].style.borderBottom = " solid white 2px";
+        });
+    };
+    for (let i = 0; i < mainNav.length; i++) {
+        mainNav[i].addEventListener('mouseleave', () => {
+            mainNav[i].style.color = "rgba(255, 255, 255, 0.5)";
+            mainNav[i].style.borderBottom = "none";
+        });
+    };
