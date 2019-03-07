@@ -142,6 +142,8 @@ a, a:visited {
     padding-top: 4em;
     position: relative;
     overflow: hidden;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .navigation-wrapper {
     display: -ms-grid;
@@ -954,9 +956,9 @@ a, a:visited {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 400px 250px;
-        grid-template-rows: 400px 250px;
-        grid-template-areas: "a a b b" "c d e f";
+    -ms-grid-rows: 300px 250px;
+        grid-template-rows: 300px 250px;
+        grid-template-areas: "a a b b"  "c d e f";
     grid-gap: 10px;
   }
   .projects-wrapper .projects-container .projects {
@@ -970,11 +972,11 @@ a, a:visited {
     grid-area: a;
   }
   .projects-wrapper .projects-container .p-1 .project-pictures-wrapper img {
-    height: 400px;
+    height: 300px;
   }
   .projects-wrapper .projects-container .p-1 .projects-overlay {
-    height: 342%;
-    padding-top: 6em;
+    height: 255%;
+    padding-top: 4em;
   }
   .projects-wrapper .projects-container .p-2 {
     -ms-grid-row: 1;
@@ -983,11 +985,11 @@ a, a:visited {
     grid-area: b;
   }
   .projects-wrapper .projects-container .p-2 .project-pictures-wrapper img {
-    height: 400px;
+    height: 300px;
   }
   .projects-wrapper .projects-container .p-2 .projects-overlay {
-    height: 342%;
-    padding-top: 6em;
+    height: 255%;
+    padding-top: 4em;
   }
   .projects-wrapper .projects-container .p-3 {
     -ms-grid-row: 2;
@@ -1059,7 +1061,7 @@ a, a:visited {
     padding: 0;
   }
   .testimonials .testimonials-cards .testimonials-description {
-    font-size: .9em;
+    font-size: .8em;
   }
   footer .footer-container {
     width: 80%;
@@ -1102,8 +1104,16 @@ a, a:visited {
   footer .footer-container .form-map .form form ::placeholder {
     color: #b3b3b3;
   }
+  footer .footer-container .form-map .form form input, footer .footer-container .form-map .form form textarea {
+    padding: 10px;
+  }
+  footer .footer-container .form-map .form form textarea {
+    max-width: 575px;
+    min-width: 575px;
+    max-height: 300px;
+  }
   footer .footer-container .form-map .form form .first-name, footer .footer-container .form-map .form form .last-name {
-    width: 49%;
+    width: 49.5%;
     display: inline-block;
   }
   footer .footer-container .form-map .form form #submit-button {
@@ -1114,6 +1124,15 @@ a, a:visited {
   }
   footer .lower-footer p {
     font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .navigation-wrapper {
+    max-width: 1450px;
+  }
+  .navigation-wrapper .nav {
+    max-width: 1450px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nick-East</title>
     <link type="text/css" href="css/main.css" rel="stylesheet">
+    <link>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,100" rel="stylesheet">
     <link href="/hamburgers.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owl.theme.default.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 </head>
@@ -20,11 +21,11 @@
                                 <p id="logo"><a>N.East</a></p>
                     </div>
                     <ul class="nav"> 
-                                <li>Home</li>
-                                <li>About Me</li>
-                                <li>Projects</li>
-                                <li>Testimonials</li>
-                                <li>Contact</li>
+                         <li><a id="logoLink">Home</a></li>
+                        <li><a id="aboutMeLink">About Me</a></li>
+                        <li><a id="projectLink">Projects</a></li>
+                        <li><a id="testiLink">Testimonials</a></li>
+                        <li><a id="contactLink">Contact</a></li>
                     </ul>
         </div>
         <div class="mobile-menu-wrapper">
@@ -111,11 +112,11 @@
                             </div>
                             <div class="exp-cards">
                                 <h4>Sales Advisor</h4>
-                                <p>B & Q <span>2016-20017</span></p>
+                                <p>B & Q <span>2016-2007</span></p>
                             </div>
                             <div class="exp-cards">
                                 <h4>Customer Advisor</h4>
-                                <p>Next Retail<span>2015-2016</span></p>
+                                <p>Next Retail<span>2000-2000</span></p>
                             </div>
                     </div>
                 </div>
@@ -183,7 +184,7 @@
                 <p>Heres a collection of my latest proejcts</p>
                 <div class="projects-container">
                     <div class="projects p-1" id="margin-fix">
-                        <div class="project-pictures-wrapper"><img src="/pictures/OceanCaptial.png"></div>
+                        <div class="project-pictures-wrapper"><img  src="/pictures/OceanCaptial.png"></div>
                         <div class="projects-overlay">
                             <h4>Ocean Captial Web Site</h4>
                             <p>HTML | CSS | JavaScript</p>
@@ -191,7 +192,7 @@
                         </div>
                     </div>
                     <div class="projects p-2">
-                            <div class="project-pictures-wrapper"><img src="/pictures/rps.png" class="pictures"></div>
+                            <div class="project-pictures-wrapper"><img src="/pictures/rps.png"></div>
                             <div class="projects-overlay">
                                 <h4>Rock Paper Scissors Game</h4>
                                 <p>HTML | CSS | JavaScript</p>
@@ -240,35 +241,25 @@
             <p>Here's what people have been saying!</p>
             <div>
                     <div class="owl-carousel">
-                      <div class="testimonials-cards">
-                          <div class="testi-inner">
-                              <img src="/pictures/icon.png">
-                              <div>
-                                    <h4>Client Name</h4>
-                                    <p>Client Company</p>
-                            </div>
+                        <div class="testimonials-cards">
+                                    <div class="testi-inner">
+                                        <img src="/pictures/icon.png">
+                                        <div>
+                                              <h4>John Smith</h4>
+                                              <p>John Smith &amp; Co</p>
+                                      </div>
+                                  </div>
+                                  <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
                         </div>
-                        <p class="testimonials-description">"Once I get my first clients their testimonials will go here"</p>
-                      </div>
                       <div class="testimonials-cards">
-                        <div class="testi-inner">
-                            <img src="/pictures/icon.png">
-                            <div>
-                                  <h4>John Smith</h4>
-                                  <p>John Smith &amp; Co</p>
+                            <div class="testi-inner">
+                                <img src="/pictures/icon.png">
+                                <div>
+                                      <h4>John Smith</h4>
+                                      <p>John Smith &amp; Co</p>
+                              </div>
                           </div>
-                      </div>
-                      <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
-                      </div>
-                      <div class="testimonials-cards">
-                        <div class="testi-inner">
-                            <img src="/pictures/icon.png">
-                            <div>
-                                  <h4>John Smith</h4>
-                                  <p>John Smith &amp; Co</p>
-                          </div>
-                      </div>
-                      <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
+                          <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
                       </div>
                       <div class="testimonials-cards">
                             <div class="testi-inner">
@@ -280,9 +271,17 @@
                           </div>
                           <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
                       </div>
-
-                     
-                    </div>
+                      <div class="testimonials-cards">
+                            <div class="testi-inner">
+                                <img src="/pictures/icon.png">
+                                <div>
+                                      <h4>John Smith</h4>
+                                      <p>John Smith &amp; Co</p>
+                              </div>
+                          </div>
+                          <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
+                      </div>
+                </div>
             </div>
         </div>
         <script>
@@ -373,11 +372,11 @@
                             </div>
                         <div class="form">
                             <form>
-                                <input type="text" class="first-name" placeholder="First Name" name="name">
-                                <input type="text" class="last-name" placeholder="Last Name" name="last">
-                                <input type="email"class="email" placeholder="Email Address" name="email">
-                                <textarea placeholder="What do you want to say?..." name="message"></textarea>
-                                <div class="button-div"><button name="submit" type="submit">Submit</button></div>
+                                <input type="text" class="first-name" placeholder="First Name">
+                                <input type="text" class="last-name" placeholder="Last Name">
+                                <input type="email"class="email" placeholder="Email">
+                                <textarea placeholder="What do you want to say?.."></textarea>
+                                <div class="button-div"><button id="submit-button">Submit</button></div>
                             </form>
                         </div>
                 </div>
@@ -389,7 +388,7 @@
             <p>ALL RIGHTS RESERVED 2019 &copy; Nick East</p>
         </div>
             <script src="jquery3.3.1-min.js"></script>
-            <script src="/owlcarousel/owl.carousel.min.js"></script>
+            <script src="/owl.carousel.min.js"></script>
             <script>
                 $(document).ready(function(){
                 $(".owl-carousel").owlCarousel({
@@ -407,9 +406,9 @@
                             768 : {
                              items:3,
                             loop:true,
-                            margin:10,
+                            margin:25,
                             autoplay:true,
-                            autoplayTimeout:3000,
+                            autoplayTimeout:3500,
                             autoplayHoverPause:false
                                 }
                         }
