@@ -29,16 +29,16 @@ mainNav = document.querySelectorAll('.nav li a');
     function Scroll () {
          ypos = window.pageYOffset;
             if (ypos > 100) {
-                logo.style.backgroundColor = 'black';
-                logo.style.color = 'white';
+                // logo.style.backgroundColor = 'black';
+                // logo.style.color = 'white';
                 navWrapper.style.backgroundColor = "#333";
                 }else{
-                    logo.style.backgroundColor = 'white';
-                    logo.style.color = 'black';
+                    // logo.style.backgroundColor = 'white';
+                    // logo.style.color = 'black';
                     navWrapper.style.backgroundColor = "transparent";
             }
     }
-    window.addEventListener('scroll', Scroll);
+    window.addEventListener('scroll', Scroll); 
 
 // skill bar animations
 
@@ -48,7 +48,7 @@ mainNav = document.querySelectorAll('.nav li a');
         if (ypos > 540) {
                 javascriptSkill.classList.add("javascript-skill-animation");
         }else {
-            javascriptSkill.classList.remove("javascript-skill-animation");
+            javascriptSkill.classList.remove("javascript-skill-animation"); 
         }
     }
     window.addEventListener('scroll', javascriptAnimationScroll);
@@ -62,7 +62,7 @@ function htmlAnimationScroll  ()  {
     }
 }
 window.addEventListener('scroll', htmlAnimationScroll);
-// sass skill
+// sass skill 
 function sassAnimationScroll  ()  {
     ypos = window.pageYOffset;
     if (ypos > 560) {
@@ -72,7 +72,7 @@ function sassAnimationScroll  ()  {
     }
 }
 window.addEventListener('scroll', sassAnimationScroll);
-// git skill
+// git skill 
 function gitAnimationScroll  ()  {
     ypos = window.pageYOffset;
     if (ypos > 570) {
@@ -110,15 +110,51 @@ for (let i = 0; i < links.length ;i++) {
     });
 }
 
+    // for (let i = 0; i < mainNav.length; i++) {
+    //     mainNav[i].addEventListener('mouseover', () => {
+    //         mainNav[i].style.color = "rgba(255, 255, 255, 1)";
+    //         mainNav[i].style.borderBottom = " solid white 2px";
+    //     });
+    // };
+    // for (let i = 0; i < mainNav.length; i++) {
+    //     mainNav[i].addEventListener('mouseleave', () => {
+    //         mainNav[i].style.color = "rgba(255, 255, 255, 0.5)";
+    //         mainNav[i].style.borderBottom = "none";
+    //     });
+    // };
+
+
+    // navigation change color on the hover 
+
+    navWrapper.addEventListener("mouseover", () => {
+        navWrapper.style.backgroundColor = 'white';
+        logo.style.color = 'white';
+        logo.style.backgroundColor = 'black';
+        for (let i = 0 ; i < mainNav.length; i++) {
+            mainNav[i].style.color = "black";
+            
+        }
+    });
+    navWrapper.addEventListener("mouseleave", () => {
+        navWrapper.style.backgroundColor = '#333';
+        logo.style.color = 'black';
+        logo.style.backgroundColor = 'white';
+        for (let i = 0 ; i < mainNav.length; i++) {
+            mainNav[i].style.color = "rgba(255, 255, 255, .6)";
+        }
+    });
+
     for (let i = 0; i < mainNav.length; i++) {
         mainNav[i].addEventListener('mouseover', () => {
-            mainNav[i].style.color = "rgba(255, 255, 255, 1)";
-            mainNav[i].style.borderBottom = " solid white 2px";
+            mainNav[i].style.borderBottom = "solid black 2px";
         });
-    };
+    }
     for (let i = 0; i < mainNav.length; i++) {
         mainNav[i].addEventListener('mouseleave', () => {
-            mainNav[i].style.color = "rgba(255, 255, 255, 0.5)";
             mainNav[i].style.borderBottom = "none";
         });
-    };
+    }
+
+
+    
+
