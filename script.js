@@ -3,19 +3,16 @@ let mobileMenu = document.getElementById("mobileNav");
 let logo = document.getElementById('logo');
 let navWrapper = document.getElementById('navWrapper');
 let hamburgerInner = document.getElementsByClassName('hamburger-inner');
-
 let aboutMeLink = document.getElementById('aboutMeLink');
 let projectLink = document.getElementById('projectLink');
 let testimonialsLink = document.getElementById('testiLink');
 let contactLink = document.getElementById('contactLink');
 let logoLink = document.getElementById('logoLink');
-
 let aboutMeLink2 = document.getElementById('aboutMeLink2');
 let projectLink2 = document.getElementById('projectLink2');
 let testimonialsLink2 = document.getElementById('testiLink2');
 let contactLink2 = document.getElementById('contactLink2');
 let logoLink2 = document.getElementById('logoLink2');
-
 let javascriptSkill = document.getElementById('javascriptSkill');
 let htmlSkill = document.getElementById('htmlSkill');
 let sassSkill = document.getElementById('SASSskill');
