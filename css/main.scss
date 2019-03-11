@@ -639,10 +639,12 @@ a, a:visited {
     
     }
     // gallery page
+    .gallery-header {
+        background: #333;
+    }
     .gallery-header-wrapper {    
         width: 100%;
         height: 50vh;
-        background: $alternativeColor;
         background: url(/pictures/call-to-action.jpeg) no-repeat center center;
         background-attachment: fixed;
         margin-top: 5em;
