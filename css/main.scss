@@ -647,7 +647,7 @@ a, a:visited {
     }
     .gallery-header-wrapper {    
         width: 100%;
-        height: 50vh;
+        height: 5em;
         background: url(/pictures/call-to-action.jpeg) no-repeat center center;
         background-attachment: fixed;
         margin-top: 5em;
@@ -660,7 +660,7 @@ a, a:visited {
             background: $alternativeColor;
             z-index: -30;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 20% 1fr;
             padding: 1em;
             i {
                 font-size: 1.5em;
@@ -672,7 +672,7 @@ a, a:visited {
         }
         h2 {
             margin: 0.7em;
-            padding-top: .5em;
+            padding-top: .8em;
         }
     }
     

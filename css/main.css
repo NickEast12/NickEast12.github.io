@@ -728,7 +728,7 @@ a, a:visited {
   }
   .gallery-header-wrapper {
     width: 100%;
-    height: 50vh;
+    height: 5em;
     background: url(/pictures/call-to-action.jpeg) no-repeat center center;
     background-attachment: fixed;
     margin-top: 5em;
@@ -743,8 +743,8 @@ a, a:visited {
     z-index: -30;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 20% 1fr;
+        grid-template-columns: 20% 1fr;
     padding: 1em;
   }
   .gallery-header-wrapper .gallery-fixed i {
@@ -757,7 +757,7 @@ a, a:visited {
   }
   .gallery-header-wrapper h2 {
     margin: 0.7em;
-    padding-top: .5em;
+    padding-top: .8em;
   }
   .gallery-images-wrapper {
     background: #333;
