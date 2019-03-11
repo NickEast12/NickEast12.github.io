@@ -46,11 +46,11 @@
             <div class="mobile-nav-inner">
                 <h3>Menu</h3>
                 <ul>
-                        <li><a id="logoLink">Home</a></li>
-                        <li><a id="aboutMeLink">About Me</a></li>
-                        <li><a id="projectLink">Projects</a></li>
-                        <li><a id="testiLink">Testimonials</a></li>
-                        <li><a id="contactLink">Contact</a></li>
+                        <li><a id="logoLink2">Home</a></li>
+                        <li><a id="aboutMeLink2">About Me</a></li>
+                        <li><a id="projectLink2">Projects</a></li>
+                        <li><a id="testiLink2">Testimonials</a></li>
+                        <li><a id="contactLink2">Contact</a></li>
                 </ul>
                 <div>
                         <i class="fab fa-twitter"></i>
@@ -299,6 +299,7 @@
         <script type="module">
             // smooth scroll links
             import jump from '/jump.module.js';
+            
             let homeButton = document.querySelector("#logoLink");
                 homeButton.addEventListener('click', () => {
                     jump('.home-target', {
@@ -341,9 +342,48 @@
                             offset: -160
                         })
                 });
-            
-                let contactButton = document.querySelector('#contactLink');
-                    contactButton.addEventListener('click', () => {
+            let contactButton = document.querySelector('#contactLink');
+                contactButton.addEventListener('click', () => {
+                            jump('.footer-container', {
+                                duration: 1200,
+                                offset: -77
+                            })
+                    });
+        
+        
+        
+            let homeButton2 = document.querySelector("#logoLink2");
+                homeButton2.addEventListener('click', () => {
+                    jump('.home-target', {
+                        duration: 1200,
+                        offset: -200
+                    });
+                });
+                
+      
+            let aboutButton2 = document.querySelector('#aboutMeLink2');
+                aboutButton2.addEventListener('click', () => {
+                jump('.intro-wrapper', {
+                    duration: 1200,
+                    offset: -50
+                })
+            });
+            let projectButton2= document.querySelector('#projectLink2');
+                projectButton2.addEventListener('click', () => {
+                jump('.projects-wrapper', {
+                    duration: 1200,
+                    offset: -230
+                });
+            });
+            let testButton2 = document.querySelector('#testiLink2');
+                testButton2.addEventListener('click', () => {
+                        jump('.testimonials', {
+                            duration: 1000,
+                            offset: -160
+                        })
+                });
+                let contactButton2 = document.querySelector('#contactLink2');
+                contactButton2.addEventListener('click', () => {
                             jump('.footer-container', {
                                 duration: 1200,
                                 offset: -77
