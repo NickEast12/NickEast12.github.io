@@ -741,19 +741,19 @@ a, a:visited {
     top: 0;
     background: #333;
     z-index: -30;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 20% 1fr;
-        grid-template-columns: 20% 1fr;
     padding: 1em;
   }
   .gallery-header-wrapper .gallery-fixed i {
     font-size: 1.5em;
     text-align: right;
-    margin: .5em 1.5em 0 0;
+    margin: .5em .5em 0 0;
     font-size: 1.5em;
     -webkit-animation: arrowRight 1.5s ease infinite;
             animation: arrowRight 1.5s ease infinite;
+    display: inline-block;
+  }
+  .gallery-header-wrapper .gallery-fixed h1 {
+    display: inline-block;
   }
   .gallery-header-wrapper h2 {
     margin: 0.7em;

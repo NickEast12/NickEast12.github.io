@@ -659,15 +659,17 @@ a, a:visited {
             top: 0;
             background: $alternativeColor;
             z-index: -30;
-            display: grid;
-            grid-template-columns: 20% 1fr;
             padding: 1em;
             i {
                 font-size: 1.5em;
                 text-align: right;
-                margin: .5em 1.5em 0 0;
+                margin: .5em .5em 0 0;
                 font-size: 1.5em;
                 animation: arrowRight 1.5s ease infinite;
+                display: inline-block;
+            }
+            h1 {
+                display: inline-block;
             }
         }
         h2 {
