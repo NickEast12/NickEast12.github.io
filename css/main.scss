@@ -76,7 +76,7 @@ a, a:visited {
         transform: translateX(0%);
     }
     50% {
-        transform: translateX(-15%);
+        transform: translateX(-10%);
     }
     10% {
         transform: translateX(0%);
@@ -665,7 +665,7 @@ a, a:visited {
             i {
                 font-size: 1.5em;
                 text-align: right;
-                margin: .5em 1em 0 0;
+                margin: .5em 1.5em 0 0;
                 font-size: 1.5em;
                 animation: arrowRight 1.5s ease infinite;
             }

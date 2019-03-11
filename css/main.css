@@ -136,8 +136,8 @@ a, a:visited {
             transform: translateX(0%);
   }
   50% {
-    -webkit-transform: translateX(-15%);
-            transform: translateX(-15%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
   10% {
     -webkit-transform: translateX(0%);
@@ -151,8 +151,8 @@ a, a:visited {
             transform: translateX(0%);
   }
   50% {
-    -webkit-transform: translateX(-15%);
-            transform: translateX(-15%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
   10% {
     -webkit-transform: translateX(0%);
@@ -750,7 +750,7 @@ a, a:visited {
   .gallery-header-wrapper .gallery-fixed i {
     font-size: 1.5em;
     text-align: right;
-    margin: .5em 1em 0 0;
+    margin: .5em 1.5em 0 0;
     font-size: 1.5em;
     -webkit-animation: arrowRight 1.5s ease infinite;
             animation: arrowRight 1.5s ease infinite;
