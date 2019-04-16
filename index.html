@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nick East Web-Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="/hamburgers.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138434630-1"></script>
     <script>
@@ -16,17 +19,34 @@
 
             gtag('config', 'UA-138434630-1');
     </script>
-    <script src="main.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.slim.js"
+    integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div id="particles-js" class="main-header">
-            <nav>
-            </nav>
             <div class="title-card">
                 <h1>Nick East</h1>
                 <p>Web Design &amp; Development</p>
             </div>
+            <div class="menu">
+                <div class="hamburger hamburger--spring " tabindex="0"aria-label="Menu" role="button" aria-controls="navigation">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li>Home</li>
+                    <li>Skills</li>
+                    <li>Recent Work</li>
+                    <li>Contact</li>
+                </ul>
+                <i class="fas fa-level-up-alt up-arrow"></i>
+            </nav>
         </div>
     </header>
     <script src="particles.js"></script>
@@ -35,5 +55,15 @@
         console.log('callback - particles-js config loaded');
         });
     </script>
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("is-active");
+          // Do something else, like open/close menu
+        });
+    </script>
+    <script src="/script.js"></script>
 </body>
 </html>

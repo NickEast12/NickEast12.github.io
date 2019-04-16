@@ -4,34 +4,64 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-body {
-  background-color: black;
-}
 
-.main-header {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  position: relative;
-  font-family: open sans;
-}
-
-
-
-.main-header .title-card {
-  position: absolute;
-  top: 20%;
-  width: 50%;
-  margin: 0 25%;
-  text-align: center;
-  border-radius: 7px;
-}
-
-.main-header .title-card h1 {
-  color: #eee;
-}
-
-.main-header .title-card p {
-  color: #eee;
+@media only screen and (min-width: 320px) {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+  }
+  .main-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .main-header .navigation {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+  }
+  .main-header .title-card {
+    position: absolute;
+    color: white;
+    width: 75%;
+    top: 20%;
+    left: 12.5%;
+    text-align: center;
+  }
+  .main-header .menu {
+    position: absolute;
+    right: 0;
+    top: 2.5%;
+    cursor: pointer;
+  }
+  .main-header .navigation {
+    position: relative;
+    -webkit-transition: -webkit-transform .45s ease;
+    transition: -webkit-transform .45s ease;
+    transition: transform .45s ease;
+    transition: transform .45s ease, -webkit-transform .45s ease;
+  }
+  .main-header .navigation ul {
+    text-align: center;
+    padding: 2em 0;
+  }
+  .main-header .navigation ul li {
+    padding: .5em 0;
+    background: #eee;
+  }
+  .main-header .navigation .up-arrow {
+    position: absolute;
+    top: 89%;
+    background-color: white;
+    right: 5%;
+    font-size: 2em;
+    width: 1.95em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: 80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
