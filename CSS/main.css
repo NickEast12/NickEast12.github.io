@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.main-header .title-card {
+  position: absolute;
+  top: 20%;
+  width: 50%;
+  margin: 0 25%;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.main-header .title-card h1 {
+  color: #eee;
+}
+
+.main-header .title-card p {
+  color: #eee;
+}
+/*# sourceMappingURL=main.css.map */
