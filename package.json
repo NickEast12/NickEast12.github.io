@@ -9,6 +9,7 @@
   "author": "Nick East",
   "license": "MIT",
   "dependencies": {
+    "hamburgers": "^1.1.3",
     "particles.js": "^2.0.0"
   }
 }
