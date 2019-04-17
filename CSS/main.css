@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (min-width: 320px) {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+  }
+  .main-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .main-header .title-card {
+    position: absolute;
+    color: mediumaquamarine;
+    width: 75%;
+    top: 34%;
+    left: 12.5%;
+    text-align: center;
+  }
+  .main-header .menu {
+    position: absolute;
+    right: 0;
+    top: 2.5%;
+    cursor: pointer;
+  }
+  .main-header .mobile-overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    background-color: transparent;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+  }
+  .main-header .mobile-overlay .colourful-clip {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 100% 100%, 0 58%, 0 0);
+            clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 100% 100%, 0 58%, 0 0);
+    z-index: 10;
+    background: #00c780;
+    background: linear-gradient(184deg, #00c780 28%, #00c780 58%, mediumaquamarine 82%);
+  }
+  .main-header .mobile-overlay .up-arrow {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    z-index: 15;
+    font-size: 1.5em;
+    padding: .1em;
+    width: 9%;
+    height: 5%;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: white;
+  }
+  .main-header .mobile-overlay nav {
+    position: relative;
+    z-index: 10;
+  }
+  .main-header .mobile-overlay nav ul {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2em;
+    list-style-type: none;
+  }
+  .main-header .mobile-overlay nav ul li {
+    padding: .35em 0;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    color: white;
+  }
+}
+/*# sourceMappingURL=main.css.map */

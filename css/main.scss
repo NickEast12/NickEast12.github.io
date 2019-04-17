@@ -12,20 +12,14 @@
         width: 100%;
         height: 100vh;
         position: relative;
-        .navigation {
-            width: 100%;
-            background-color: white;
-            position: absolute;
-            top: 0;
-            transform: translateY(-120%);
-        }
         .title-card {
             position: absolute;
-            color: white;
+            color: rgba(102, 205, 170, 1);
             width: 75%;
-            top: 20%;
+            top: 34%;
             left: 12.5%;
             text-align: center;
+           
         } 
         .menu {
             position: absolute;
@@ -33,27 +27,51 @@
             top: 2.5%;
             cursor: pointer;
         }
-        .navigation {
-            position: relative;
-            transition: transform .45s ease;
-            ul {
-                text-align: center;
-                padding: 2em 0;
-                li{
-                    padding: .5em 0;
-                    background: #eee;
-                }
+        .mobile-overlay {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            transform: translateY(-100%);
+            background-color: transparent;
+            transition: transform .5s ease;
+            .colourful-clip {
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 100% 100%, 0 58%, 0 0);
+                z-index: 10;
+                background: rgb(0,199,128);
+                background: linear-gradient(184deg, rgba(0,199,128,1) 28%, rgba(0,199,128,1) 58%, rgba(102,205,170,1) 82%);
             }
             .up-arrow {
-                position: absolute;
-                top: 89%; 
-                background-color: white;
-                right: 5%;
-                font-size: 2em;
-                width: 1.95em;
-                height: 1.5em;
-                text-align: center;
-                border-radius: 80%;
+                        position: absolute;
+                        top: 8%; 
+                        right: 5%;
+                        z-index: 15;
+                        font-size: 1.5em;
+                        padding: .1em;
+                        width: 9%;
+                        height: 5%;
+                        text-align: center;
+                        border-radius: 100%;
+                        cursor: pointer;
+                        background-color: white;
+                    }
+            nav {
+                position: relative;
+                z-index: 10;
+                ul {
+                    width: 80%;
+                    margin: 0 auto;
+                    padding-top: 2em;
+                    list-style-type: none;
+                    li {
+                        padding: .35em 0 ;
+                        font-size: 2em;
+                        font-family: 'Lobster', cursive;
+                        color: white; 
+                    }
+                }
             }
         }
     }
