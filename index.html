@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="/hamburgers.css" rel="stylesheet">
+    <link href="/node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--Google Analytics -->
@@ -57,11 +57,21 @@
                 <div class="recent-work-section"></div>
         </main>
         <footer class="footer">
-            <h3>You've got mail</h3>
+            <h3>Contact Me</h3>
+            <div class="footer-content">
+                <p>Drop me a email to the address below for freelance work, collaberations or to say Hi!</p>
+                <p class="email">E: nick_east@yahoo.com</p>
+            </div>
+            <div class="social-media-wrapper">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-github"></i>
+            </div>
             </footer>
         <script src="/particles.js"></script>
         <script>
-            particlesJS.load('particles-js', '/particles.json', function() {
+            particlesJS.load('/particles-js', '/particles.json', function() {
             console.log('callback - particles-js config loaded');
             });
         </script>
