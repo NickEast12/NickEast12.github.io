@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nick East Web-Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/CSS/main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="/hamburgers.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -20,53 +20,60 @@
             gtag('config', 'UA-138434630-1');
     </script>
     <script
-    src="https://code.jquery.com/jquery-3.4.0.slim.js"
-    integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ="
+    src="https://code.jquery.com/jquery-3.4.0.js"
+    integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
     crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <div id="particles-js" class="main-header">
-            <div class="title-card">
-                <h1>Nick East</h1>
-                <p>Web Design &amp; Development</p>
-            </div>
-            <div class="menu">
-                <div class="hamburger hamburger--spring " tabindex="0"aria-label="Menu" role="button" aria-controls="navigation">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
+    <body>
+        <header>
+                <div id="particles-js" class="main-header">
+                    <div class="title-card">
+                        <h1>Nick East</h1>
+                        <p>Web Design &amp; Development</p>
+                    </div>
+                    <div class="menu">
+                        <div class="hamburger hamburger--spring " tabindex="0"aria-label="Menu" role="button" aria-controls="navigation">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-overlay">
+                        <div class="colourful-clip"></div>
+                        <i class="fas fa-times up-arrow"></i>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Skills</a></li>
+                                <li><a href="#">Recent Work</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </div>
-            <div class="mobile-overlay">
-                <div class="colourful-clip"></div>
-                <i class="fas fa-times up-arrow"></i>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Skills</li>
-                        <li>Recent Work</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <script src="particles.js"></script>
-    <script>
-        particlesJS.load('particles-js', '/particles.json', function() {
-        console.log('callback - particles-js config loaded');
-        });
-    </script>
-    <script>
-        // Look for .hamburger
-        var hamburger = document.querySelector(".hamburger");
-        // On click
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("is-active");
-          // Do something else, like open/close menu
-        });
-    </script>
-    <script src="/script.js"></script>
-</body>
+        </header>
+        <main>
+                <div class="skills-section"></div>
+                <div class="recent-work-section"></div>
+        </main>
+        <footer class="footer">
+            <h3>You've got mail</h3>
+            </footer>
+        <script src="/particles.js"></script>
+        <script>
+            particlesJS.load('particles-js', '/particles.json', function() {
+            console.log('callback - particles-js config loaded');
+            });
+        </script>
+        <script>
+            // Look for .hamburger
+            var hamburger = document.querySelector(".hamburger");
+            // On click
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+            });
+        </script>
+        <script src="/script.js"></script>
+    </body>
 </html>

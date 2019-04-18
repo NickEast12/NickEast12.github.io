@@ -5,6 +5,37 @@
           box-sizing: border-box;
 }
 
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+@-webkit-keyframes roll-out-left {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100px) rotate(-540deg);
+            transform: translateY(-100px) rotate(-540deg);
+    opacity: 0;
+  }
+}
+
+@keyframes roll-out-left {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100px) rotate(-540deg);
+            transform: translateY(-100px) rotate(-540deg);
+    opacity: 0;
+  }
+}
+
 @media only screen and (min-width: 320px) {
   body {
     font-family: 'Open Sans', sans-serif;
@@ -14,10 +45,11 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    background: black;
   }
   .main-header .title-card {
     position: absolute;
-    color: mediumaquamarine;
+    color: white;
     width: 75%;
     top: 34%;
     left: 12.5%;
@@ -65,6 +97,10 @@
     cursor: pointer;
     background-color: white;
   }
+  .main-header .mobile-overlay .roll-out-top {
+    -webkit-animation: roll-out-left 0.6s ease-in  both;
+            animation: roll-out-left 0.6s ease-in  both;
+  }
   .main-header .mobile-overlay nav {
     position: relative;
     z-index: 10;
@@ -80,6 +116,42 @@
     font-size: 2em;
     font-family: 'Lobster', cursive;
     color: white;
+  }
+  .skills-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background: mediumaquamarine;
+    background: linear-gradient(184deg, mediumaquamarine 7%, #00c780 89%, #00c780 100%);
+  }
+  .recent-work-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    background: #03a89e;
+    background: linear-gradient(184deg, #03a89e 0%, #00c78c 100%);
+    margin-bottom: 300px;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 65%, 0 100%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 65%, 0 100%, 0 0);
+  }
+  .footer {
+    position: fixed;
+    height: 250px;
+    z-index: -10;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .footer h3 {
+    color: white;
+    position: relative;
+    z-index: -99;
+    text-align: left;
+    font-size: 2.5em;
+    bottom: 0;
+    font-family: 'Lobster', cursive;
   }
 }
 /*# sourceMappingURL=main.css.map */
