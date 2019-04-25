@@ -7,6 +7,7 @@ a, a:visited {
     color: inherit; 
     text-decoration: none;
 }
+
 @keyframes roll-out-left {
     0% {
       transform: translateY(0) rotate(0deg);
@@ -18,137 +19,189 @@ a, a:visited {
     }
   }
   
+
+  
 @media only screen and (min-width:320px) {
     body {
         font-family: 'Open Sans', sans-serif; 
         background-color: black;
-    }
-    .main-header {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        background: black;
-        .title-card {
-            position: absolute;
-            color: white;
-            width: 75%;
-            top: 34%;
-            left: 12.5%;
-            text-align: center;
-           
-        } 
-        .menu {
-            position: absolute;
-            right: 0;
-            top: 2.5%;
-            cursor: pointer;
-        }
-        .mobile-overlay {
+    
+        .main-header {
             width: 100%;
             height: 100vh;
-            position: absolute;
-            transform: translateY(-100%);
-            background-color: transparent;
-            transition: transform .5s ease;
-            .colourful-clip {
+            position: relative;
+            background: black;
+            .title-card {
                 position: absolute;
+                width: 75%;
+                top: 36%;
+                left: 12.5%;
+                text-align: center;
+                .main-logo {
+                    width: 5em;
+                    height: 5em;
+                    fill: white;
+                    transition: fill 1s ease;
+                }
+                .main-logo:hover {
+                    fill: rgb(0,199,128);
+                }
+            } 
+            .menu {
+                position: absolute;
+                right: 0;
+                top: 2.5%;
+                cursor: pointer;
+            }
+            .mobile-overlay {
                 width: 100%;
                 height: 100vh;
-                clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 100% 100%, 0 58%, 0 0);
-                z-index: 10;
-                background: rgb(0,199,128);
-                background: linear-gradient(184deg, rgba(0,199,128,1) 28%, rgba(0,199,128,1) 58%, rgba(102,205,170,1) 82%);
-            }
-            .up-arrow {
-                        position: absolute;
-                        top: 8%; 
-                        right: 5%;
-                        z-index: 15;
-                        font-size: 1.5em;
-                        padding: .1em;
-                        width: 9%;
-                        height: 5%;
-                        text-align: center;
-                        border-radius: 100%;
-                        cursor: pointer;
-                        background-color: white;
-                    }
-            .roll-out-top {
-                animation: roll-out-left 0.6s ease-in  both;
-            }
-            nav {
-                position: relative;
-                z-index: 10;
-                ul {
-                    width: 80%;
-                    margin: 0 auto;
-                    padding-top: 2em;
-                    list-style-type: none;
-                    li {
-                        padding: .35em 0 ;
-                        font-size: 2em;
-                        font-family: 'Lobster', cursive;
-                        color: white; 
+                position: absolute;
+                transform: translateY(-100%);
+                background-color: transparent;
+                transition: transform .5s ease;
+                .colourful-clip {
+                    position: absolute;
+                    width: 100%;
+                    height: 100vh;
+                    clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 100% 100%, 0 58%, 0 0);
+                    z-index: 10;
+                    background: rgb(0,199,128);
+                    background: linear-gradient(184deg, rgba(0,199,128,1) 28%, rgba(0,199,128,1) 58%, rgba(102,205,170,1) 82%);
+                }
+                .up-arrow {
+                            position: absolute;
+                            top: 8%; 
+                            right: 5%;
+                            z-index: 15;
+                            font-size: 1.5em;
+                            padding: .1em;
+                            width: 9%;
+                            height: 5%;
+                            text-align: center;
+                            border-radius: 100%;
+                            cursor: pointer;
+                            background-color: white;
+                        }
+                .roll-out-top {
+                    animation: roll-out-left 0.6s ease-in  both;
+                }
+                nav {
+                    position: relative;
+                    z-index: 10;
+                    ul {
+                        width: 80%;
+                        margin: 0 auto;
+                        padding-top: 2em;
+                        list-style-type: none;
+                        li {
+                            padding: .3em 0 ;
+                            font-size: 1.95em;
+                            font-family: 'Lobster', cursive;
+                            color: white;
+                            text-align: center;
+                            .logo{
+                                height: 50px;
+                                width: 50px;
+                                fill: black;
+                                background: white;
+                                padding: 10px;
+                                transition-property: background, fill; 
+                                transition-duration: .5s;
+                                transition-timing-function: ease-out;
+                            }
+                            .logo:hover {
+                                fill: white;
+                                background: black
+                            } 
+                        }
                     }
                 }
             }
         }
-    }
-    .skills-section {
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        z-index: 5;
-        background: rgb(102,205,170);
-        background: linear-gradient(184deg, rgba(102,205,170,1) 7%, rgba(0,199,128,1) 89%, rgba(0,199,128,1) 100%);
-    }
-    .recent-work-section {
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        z-index: 0;
-        background: rgb(3,168,158);
-        background: linear-gradient(184deg, rgba(3,168,158,1) 0%, rgba(0,199,140,1) 100%);
-        margin-bottom: 175px;
-        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 100%, 0 61%, 0 0);
-        }
-    .footer {
-        position: fixed;
-        height: 250px;
-        z-index: -10;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        color: white;
-        h3 {
-            color: white;
-            margin-left: .5em;
-            text-align: left;
-            font-size: 2.5em;
-            font-family: 'Lobster', cursive;
-        }
-        .footer-content {
-            width: 86%;
-            margin: 0 auto;
-            margin-top: 1.3em;
-            font-size: 1em;
-            .email {
-                margin-top: 1em;
-              }
-        }
-        .social-media-wrapper {
+        .skills-section {
+            height: 100vh;
             width: 100%;
-            text-align: center;
-            margin-top: 2.5em;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
-            i {
-                font-size: 1.45em;
-                color: #03A89E;
+            position: relative;
+            // background: rgb(102,205,170);
+            // background: linear-gradient(184deg, rgba(102,205,170,1) 7%, rgba(0,199,128,1) 89%, rgba(0,199,128,1) 100%);
+            background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,199,140,1) 80%);
+            color: white;
+            padding:  1em 1em 0 1em ;
+            letter-spacing: 2px;
+            font-family: 'Merriweather', serif;
+            font-weight: 300;
+            .hello {
+                font-weight: 700;
+                font-size: 1.5em;
+                color: rgba(0,199,140,1);
+                
             }
+            h1, h2 {
+                text-transform: capitalize;
+                font-size: 1em;
+                padding: .5em 0;
+            }
+            
+           
+          
         }
-       
+        .recent-work-section {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            z-index: 0;        
+            background: rgb(0,0,0);
+            background: linear-gradient(200deg, rgba(0,199,140,1) 10%, rgba(0,199,140,1) 69%);
+            margin-bottom: 175px;
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 100%, 0 61%, 0 0);
+            }
+        .footer {
+            position: fixed;
+            height: 250px;
+            z-index: -10;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            color: white;
+            h3 {
+                color: white;
+                margin-left: .5em;
+                text-align: left;
+                font-size: 2.5em;
+                font-family: 'Lobster', cursive;
+            }
+            .footer-content {
+                width: 86%;
+                margin: 0 auto;
+                margin-top: 1.3em;
+                font-size: 1em;
+                .email {
+                    margin-top: 1em;
+                }
+            }
+            .social-media-wrapper {
+                width: 100%;
+                text-align: center;
+                margin-top: 2.5em;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                i {
+                    font-size: 1.45em;
+                    color: white;
+                    transition: color .1s ease-in-out;
+                }
+                i:hover {
+                    color: #03A89E;
+                }
+            }
         
+            
+        }
     }
 }
+
+//rgba(0,199,140,1) - almost green but not 
+//rgba(3,168,158,1) - the nice blue green 
