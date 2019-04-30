@@ -50,9 +50,17 @@ a, a:visited {
   body .main-header .title-card {
     position: absolute;
     width: 75%;
+    height: 63%;
     top: 36%;
     left: 12.5%;
     text-align: center;
+  }
+  body .main-header .title-card .fas {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
   }
   body .main-header .title-card .main-logo {
     width: 5em;
@@ -147,25 +155,30 @@ a, a:visited {
   body .skills-section {
     height: 100vh;
     width: 100%;
-    position: relative;
-    background: black;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), color-stop(80%, #00c78c));
-    background: linear-gradient(180deg, black 50%, #00c78c 80%);
-    color: white;
+    background: white;
+    color: black;
     padding: 1em 1em 0 1em;
-    letter-spacing: 2px;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    font-family: "Karla", sans-serif;
   }
-  body .skills-section .hello {
+  body .skills-section .introduction {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: center;
+  }
+  body .skills-section .introduction h1 {
+    margin-bottom: .6em;
+    font-size: 2.5em;
     font-weight: 700;
-    font-size: 1.5em;
-    color: #00c78c;
   }
-  body .skills-section h1, body .skills-section h2 {
-    text-transform: capitalize;
-    font-size: 1em;
+  body .skills-section .introduction p {
+    font-weight: 400;
     padding: .5em 0;
+  }
+  body .skills-section .skills-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 0;
   }
   body .recent-work-section {
     height: 100vh;

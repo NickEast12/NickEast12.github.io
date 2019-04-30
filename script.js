@@ -1,7 +1,7 @@
 // assigning varibales
 const hamburgerAgain = document.querySelector('.hamburger');
 const nav = document.querySelector('.mobile-overlay');
-const upArrow = document.querySelector('.fas');
+const upArrow = document.querySelector('.up-arrow');
 
 // mobile menu appear
 hamburgerAgain.addEventListener('click', () => {

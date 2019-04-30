@@ -10,7 +10,7 @@
     <link href="/hamburgers.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138434630-1"></script>
@@ -38,6 +38,7 @@
                                 <path d="M0 250 l0 -250 1650 0 1650 0 0 250 0 250 -1650 0 -1650 0 0 -250z" class="logo-path"/>
                             </g>
                         </svg>
+                        <i class="fas fa-angle-down"></i>
                     </div>
                     <div class="menu">
                         <div class="hamburger hamburger--spring " tabindex="0"aria-label="Menu" role="button" aria-controls="navigation">
@@ -71,8 +72,16 @@
         </header>
         <main>
                 <div class="skills-section">
-                    <h1><span class="hello">Hi I'm Nick!</span> a aspiring front end developer from London, UK.</h1>
-                    <h2>I build websites, apps, play around with photoshop and take photos.</h2>
+                    <div class="introduction">
+                        <h1>Default title...</h1>
+                        <!-- <h1>Hi i'm Nick...</h1> -->
+                        <p>I'm a aspiring front end developer from London, UK currently looking for my first professional position.</p>
+                        <p>I build websites, apps, games, play around with photoshop and take photos</p>
+                        <p>This portfolio is still under construction and is subject to change as I can never settle on a design I like.</p>
+                    </div>
+                    <aside class="skills-wrapper">
+                        <h2>My Skills</h2>
+                    </aside>
                 </div>
                 <div class="recent-work-section">
                     <h1>Test</h1>
@@ -96,7 +105,7 @@
             </footer>
         <script src="/particles.js"></script>
         <script>
-            particlesJS.load('particles-js', '/particles.json', function() {
+            particlesJS.load('particles-js', 'particles.json', function() {
             console.log('callback - particles-js config loaded');
             });
         </script>
