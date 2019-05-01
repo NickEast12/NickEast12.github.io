@@ -1,126 +1,689 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nick East Web-Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="/hamburgers.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nick-East</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <link>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,100" rel="stylesheet">
+    <link href="/hamburgers.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owl.theme.default.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!--Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138434630-1"></script>
-    <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-138434630-1');
-    </script>
-    <script
-    src="https://code.jquery.com/jquery-3.4.0.js"
-    integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-    crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 </head>
-    <body>
-        <header>
-                <div id="particles-js" class="main-header">
-                    <div class="title-card" data-aos="fade-down" data-aos-delay="1500">
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="330.000000pt" height="308.000000pt" viewBox="0 0 330.000000 308.000000" preserveAspectRatio="xMidYMid meet" class="main-logo">
-                            <g transform="translate(0.000000,308.000000) scale(0.100000,-0.100000)"  stroke="none">
-                                <path d="M0 2830 l0 -250 1650 0 1650 0 0 250 0 250 -1650 0 -1650 0 0 -250z" class="logo-path"/>
-                                <path d="M0 1450 l0 -250 875 0 875 0 0 250 0 250 -875 0 -875 0 0 -250z" class="logo-path"/>
-                                <path d="M0 250 l0 -250 1650 0 1650 0 0 250 0 250 -1650 0 -1650 0 0 -250z" class="logo-path"/>
-                            </g>
-                        </svg>
-                        <i class="fas fa-angle-down"></i>
+    <header class="main-page-header">
+        <div class="navigation-wrapper" id="navWrapper">
+                    <div class="logo-wrapper">
+                                <p id="logo"><a>N.East</a></p>
                     </div>
-                    <div class="menu">
-                        <div class="hamburger hamburger--spring " tabindex="0"aria-label="Menu" role="button" aria-controls="navigation">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
+                    <ul class="nav"> 
+                         <li><a id="logoLink">Home</a></li>
+                        <li><a id="aboutMeLink">About Me</a></li>
+                        <li><a id="projectLink">Projects</a></li>
+                        <li><a id="testiLink">Testimonials</a></li>
+                        <li><a id="contactLink">Contact</a></li>
+                    </ul>
+                    </div>
+                    <div class="mobile-menu-wrapper">
+                            <button class="hamburger hamburger--spin" type="button" id="mobileMenu">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                            </button>
+                    </div>
+        <div class="title-wrapper">
+                <span id="home" class="home-target"></span>
+                <h1>Nick East</h1>
+                <h2>Web Design | Development | Photography</h2>
+                <a><i class="fas fa-angle-double-down" id="downArrow"></i></a>
+        </div>
+        <!--Mobile Navigation-->
+        <div class="mobile-navigation" id="mobileNav">
+            <div class="mobile-nav-inner">
+                <h3>Menu</h3>
+                <ul>
+                        <li><a id="logoLink2">Home</a></li>
+                        <li><a id="aboutMeLink2">About Me</a></li>
+                        <li><a id="projectLink2">Projects</a></li>
+                        <li><a id="testiLink2">Testimonials</a></li>
+                        <li><a id="contactLink2">Contact</a></li>
+                </ul>
+                <div>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="intro-wrapper">
+            <span id="aboutMe"></span>
+            <div class="about-me-wrapper">
+                        <h2>About Me</h2>
+                        <div class="about-me-inner">
+                                <img src="./pictures/pictureofMe.jpg" alt="a picture of me">
+                                <p>Hi, I'm an aspiring front end developer from London, UK. I love programming, creating, learning and taking photos. Currently looking for a Junior Front End Developer Role, I will let you know how it goes!..</p>
+                        </div>
+            </div>
+            <div class="skills-exp-wrapper">
+                <div class="skills">
+                    <h2 id="skills">My Skills</h2>
+                    <div class="skill-bar">
+                        <div class="skill-bar-inner" id="htmlSkill">
+                                <p>HTML + CSS</p>
                         </div>
                     </div>
-                    <div class="mobile-overlay">
-                        <div class="colourful-clip"></div>
-                        <i class="fas fa-times up-arrow"></i>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="330.000000pt" height="308.000000pt" viewBox="0 0 330.000000 308.000000" preserveAspectRatio="xMidYMid meet" class="logo">
-                                        <g transform="translate(0.000000,308.000000) scale(0.100000,-0.100000)"  stroke="none">
-                                            <path d="M0 2830 l0 -250 1650 0 1650 0 0 250 0 250 -1650 0 -1650 0 0 -250z" class="logo-path"/>
-                                            <path d="M0 1450 l0 -250 875 0 875 0 0 250 0 250 -875 0 -875 0 0 -250z" class="logo-path"/>
-                                            <path d="M0 250 l0 -250 1650 0 1650 0 0 250 0 250 -1650 0 -1650 0 0 -250z" class="logo-path"/>
-                                        </g>
-                                    </svg></li>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </nav>
+                    <div class="skill-bar">
+                        <div class="skill-bar-inner" id="javascriptSkill">
+                                <p>Javascript + JQuery</p>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-inner" id="SASSskill">
+                                <p>SASS</p>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-inner" id="gitskill">
+                                <p>GIT</p>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-inner" id="PhotoshopSkill">
+                                <p>Photoshop</p>
+                        </div>
                     </div>
                 </div>
-        </header>
-        <main>
-                <div class="skills-section">
-                    <div class="introduction">
-                        <h1>Default title...</h1>
-                        <!-- <h1>Hi i'm Nick...</h1> -->
-                        <p>I'm a aspiring front end developer from London, UK currently looking for my first professional position.</p>
-                        <p>I build websites, apps, games, play around with photoshop and take photos</p>
-                        <p>This portfolio is still under construction and is subject to change as I can never settle on a design I like.</p>
+                <div class="exp">
+                    <h2>Experience</h2>
+                    <div class="experience-inner">
+                            <div class="exp-cards">
+                                <h4>Seeking new role</h4>
+                                <p>Web Developer<span>Ongoing</span></p>
+                            </div>
+                            <div class="exp-cards">
+                                <h4>Business Development</h4>
+                                <p>Vine Street Solutions<span>2017-2019</span></p>
+                            </div>
+                            <div class="exp-cards">
+                                <h4>Sales Advisor</h4>
+                                <p>B & Q <span>2016-2007</span></p>
+                            </div>
+                            <div class="exp-cards">
+                                <h4>Customer Advisor</h4>
+                                <p>Next Retail<span>2000-2000</span></p>
+                            </div>
                     </div>
-                    <aside class="skills-wrapper">
-                        <h2>My Skills</h2>
-                    </aside>
                 </div>
-                <div class="recent-work-section">
-                    <h1>Test</h1>
-                    <p>this is a test</p>
-                    <h1>Test</h1>
-                    <p>this is a test</p>
+            </div>
+            <div class="banner">
+                <div class="banner-inner">
+                    <h4>1.5</h4>
+                    <p>Years</p>
                 </div>
-        </main>
-        <footer class="footer">
-            <h3>Contact Me</h3>
-            <div class="footer-content">
-                <p>Drop me a email to the address below for freelance work, collaberations or to say Hi!</p>
-                <p class="email">E: nick_east@yahoo.com</p>
+                <div class="banner-inner">
+                    <h4>14</h4>
+                    <p>Projects</p>
+                </div>
+                <div class="banner-inner">
+                    <h4>1</h4>
+                    <p>Client</p>
+                </div>
+                <div class="banner-inner">
+                    <h4>0</h4>
+                    <p>Awards</p>
+                </div>
             </div>
-            <div class="social-media-wrapper">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-github"></i>
+        </div>
+        <div class="middle-wrapper">
+            <div class="services">
+                <div class="services-info">
+                    <h3>My Services</h3>
+                    <p>Heres just a couple of thing that I bring to the table, I'm constantly learning new methods, frameworks and languages to help improve my code. </p>
+                </div>
+                <div class="services-cards-wrapper">
+                    <div class="services-cards" data-aos="fade-down-right">
+                            <i class="fas fa-file-code"></i>
+                            <h4>Web Design + Development</h4>
+                            <p>I love creating websites that not only look great but work seamlessly as intended. Although still being a rookie I have lots to learn!</p>
+                    </div>
+                    <div class="services-cards" data-aos="fade-up-right">
+                        <i class="fab fa-css3-alt"></i>
+                        <h4>CSS Animation</h4>
+                        <p>Animations can bring a website to life and make it much more than a static site. With a combination of CSS3 animations and JS event listeners, I can create a number of animations that work well on all screen sizes.</p>
+                    </div>
+                    <div class="services-cards" data-aos="fade-down-right">
+                        <i class="fas fa-desktop"></i>
+                        <h4>Responsive Design</h4>
+                        <p>I build all of my website using the mobile first approach meaning the design is stable and looks good on a variety of viewports.</p>
+                    </div>
+                    <div class="services-cards" data-aos="fade-up-right">
+                        <i class="fas fa-camera"></i>
+                        <h4>Photography</h4>
+                        <p>Photos and website work hand in hand and they can change the whole aspect of a website and as they say, "A picture is worth a thousand words"</p>
+                    </div>
+                </div>
             </div>
-            </footer>
-        <script src="/particles.js"></script>
+        </div>
+        <div class="call-to-action-wrapper ">
+                <img src="./pictures/call-to-action.jpeg" alt="nice and green" class="call-to-action-img rellax" data-rellax-speed="-2" data-rellax-percentage="-10.5">
+                <div>
+                    <h4>Want to work on a project together?</h4>
+                    <h3>Drop me a message below</h3>
+                    <button id="getInContactButton">Contact</button>
+                </div>
+        </div>
+        <div class="lower-wrapper">
+            <div class="projects-wrapper">
+                <h3>My latest projects</h3>
+                <p>Heres a collection of my latest proejcts</p>
+                <div class="projects-container">
+                    <div class="projects p-1" id="margin-fix">
+                        <div class="project-pictures-wrapper"><img  src="/pictures/OceanCaptial.png"></div>
+                        <div class="projects-overlay">
+                            <h4>Ocean Captial Web Site</h4>
+                            <p>HTML | CSS | JavaScript</p>
+                            <button><a href="https://github.com/NickEast12/Hedge-Fund-Website" target="_blank">Visit Project</a></button>
+                        </div>
+                    </div>
+                    <div class="projects p-2">
+                            <div class="project-pictures-wrapper"><img src="/pictures/rps.png"></div>
+                            <div class="projects-overlay">
+                                <h4>Rock Paper Scissors Game</h4>
+                                <p>HTML | CSS | JavaScript</p>
+                                <button><a href="https://github.com/NickEast12/Rock_Paper_Scissors" target="_blank">Visit Project</a></button>
+                            </div>
+                    </div>
+                    <div class="projects p-3">
+                            <div class="project-pictures-wrapper"><img src="/pictures/gamingFinal.png"></div>
+                            <div class="projects-overlay">
+                                <h4>Gaming Social Media</h4>
+                                <p>HTML | CSS | JavaScript</p>
+                                <button><a href="https://github.com/NickEast12/Rock_Paper_Scissors" target="_blank">Visit Project</a></button>
+                            </div>
+                    </div>
+                    <div class="projects p-4">
+                            <div class="project-pictures-wrapper"><img src="/pictures/justIT.png"></div>
+                            <div class="projects-overlay">
+                                <h4>Redesign of Website</h4>
+                                <p>HTML | CSS | JavaScript</p>
+                                <button><a href="https://github.com/NickEast12/Just-IT-Remake" target="_blank">Visit Project</a></button>
+                                
+                            </div>
+                    </div>
+                    <div class="projects p-5">
+                            <div class="project-pictures-wrapper"><img src="/pictures/background-blog-business-997723.png"></div>
+                            <div class="projects-overlay">
+                                <h4>Blog Website</h4>
+                                <p>HTML | CSS</p>
+                                <button><a href="https://github.com/NickEast12/Blog-Website" target="_blank">Visit Project</a></button>
+                            </div>
+                    </div>
+                    <div class="projects p-6">
+                            <div class="project-pictures-wrapper"><img src="/pictures/tipcalc.png"></div>
+                            <div class="projects-overlay">
+                                <h4>Tip Calculator</h4>
+                                <p>JavaScript</p>
+                                <button><a href="https://github.com/NickEast12/Tip-Calculator" target="_blank">Visit Project</a></button>
+                                
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <h4>Testimonials</h4>
+            <p>Here's what people have been saying!</p>
+            <div>
+                    <div class="owl-carousel">
+                        <div class="testimonials-cards">
+                                    <div class="testi-inner">
+                                        <img src="/pictures/icon.png">
+                                        <div>
+                                              <h4>John Smith</h4>
+                                              <p>John Smith &amp; Co</p>
+                                      </div>
+                                  </div>
+                                  <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
+                        </div>
+                      <div class="testimonials-cards">
+                            <div class="testi-inner">
+                                <img src="/pictures/icon.png">
+                                <div>
+                                      <h4>John Smith</h4>
+                                      <p>John Smith &amp; Co</p>
+                              </div>
+                          </div>
+                          <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
+                      </div>
+                      <div class="testimonials-cards">
+                            <div class="testi-inner">
+                                <img src="/pictures/icon.png">
+                                <div>
+                                      <h4>John Smith</h4>
+                                      <p>John Smith &amp; Co</p>
+                              </div>
+                          </div>
+                          <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
+                      </div>
+                      <div class="testimonials-cards">
+                            <div class="testi-inner">
+                                <img src="/pictures/icon.png">
+                                <div>
+                                      <h4>John Smith</h4>
+                                      <p>John Smith &amp; Co</p>
+                              </div>
+                          </div>
+                          <p class="testimonials-description">"Nick designed us a great looking website to help us improve our online presence"</p>
+                      </div>
+                </div>
+            </div>
+        </div>
         <script>
-            particlesJS.load('particles-js', 'particles.json', function() {
-            console.log('callback - particles-js config loaded');
-            });
+                    // Look for .hamburger
+                    var hamburger = document.querySelector(".hamburger");
+                    // On click
+                    hamburger.addEventListener("click", function() {
+                    // Toggle class "is-active"
+                    hamburger.classList.toggle("is-active");
+                    // Do something else, like open/close menu
+                    });   
+                    
         </script>
-        <script>
-            // Look for .hamburger
-            var hamburger = document.querySelector(".hamburger");
-            // On click
-            hamburger.addEventListener("click", () => {
-                hamburger.classList.toggle("is-active");
-            // Do something else, like open/close menu
+        <script type="text/javascript" src="./script.js"></script>
+        <script type="module">
+            // smooth scroll links
+            import jump from '/jump.module.js';
+            
+            let homeButton = document.querySelector("#logoLink");
+                homeButton.addEventListener('click', () => {
+                    jump('.home-target', {
+                        duration: 1200,
+                        offset: -200
+                    });
+                });
+            let logoButton = document.querySelector('#logo');
+            logoButton.addEventListener('click', () => {
+                jump('.home-target', {
+                        duration: 1200,
+                        offset: -170
+                    });
             });
+            let aboutButton = document.querySelector('#aboutMeLink');
+            aboutButton.addEventListener('click', () => {
+                jump('.intro-wrapper', {
+                    duration: 1200,
+                    offset: -50
+                })
+            });
+            let projectButton = document.querySelector('#projectLink');
+            projectButton.addEventListener('click', () => {
+                jump('.projects-wrapper', {
+                    duration: 1200,
+                    offset: -230
+                });
+            });
+            let arrowDown = document.querySelector('#downArrow ');
+            arrowDown.addEventListener('click', () => {
+                jump('.intro-wrapper', {
+                    duration: 1200,
+                    offset: -50
+                })
+            });
+            let testButton = document.querySelector('#testiLink');
+                testButton.addEventListener('click', () => {
+                        jump('.testimonials', {
+                            duration: 1000,
+                            offset: -160
+                        })
+                });
+            let contactButton = document.querySelector('#contactLink');
+                contactButton.addEventListener('click', () => {
+                            jump('.footer-container', {
+                                duration: 1200,
+                                offset: -77
+                            })
+                    });
+        
+        
+        
+            let homeButton2 = document.querySelector("#logoLink2");
+                homeButton2.addEventListener('click', () => {
+                    jump('.home-target', {
+                        duration: 1200,
+                        offset: -200
+                    });
+                });
+                
+      
+            let aboutButton2 = document.querySelector('#aboutMeLink2');
+                aboutButton2.addEventListener('click', () => {
+                jump('.intro-wrapper', {
+                    duration: 1200,
+                    offset: -50
+                })
+            });
+            let projectButton2= document.querySelector('#projectLink2');
+                projectButton2.addEventListener('click', () => {
+                jump('.projects-wrapper', {
+                    duration: 1200,
+                    offset: -230
+                });
+            });
+            let testButton2 = document.querySelector('#testiLink2');
+                testButton2.addEventListener('click', () => {
+                        jump('.testimonials', {
+                            duration: 1000,
+                            offset: -160
+                        })
+                });
+                let contactButton2 = document.querySelector('#contactLink2');
+                contactButton2.addEventListener('click', () => {
+                            jump('.footer-container', {
+                                duration: 1200,
+                                offset: -77
+                            })
+                    });
         </script>
-        <script src="/script.js"></script>
+        <script src="/rellax.min.js"></script>
         <script>
-                AOS.init();
+                    // Also can pass in optional settings block
+                    var rellax = new Rellax('.rellax', {
+                        center: true
+
+                    });
         </script>
     </body>
+    <footer>
+        <div class="footer-container">
+                <h3>Want to get in touch?</h3>
+                <p>Please fill in the form below and I will get back to you shortly</p>
+                <div class="form-map">
+                        <div class="contact">
+                            <p><i class="fas fa-map-marker-alt"></i>Sutton, Surrey, London, SM1</p>
+                            <p><i class="fas fa-envelope"></i>nickeast1998@gmail.com</p>
+                            <p><i class="fab fa-github"></i>GitHub</p>
+                            <p><i class="fab fa-linkedin"></i>LinkedIn</p>
+                            </div>
+                        <div class="form">
+                            <form>
+                                <input type="text" class="first-name" placeholder="First Name">
+                                <input type="text" class="last-name" placeholder="Last Name">
+                                <input type="email"class="email" placeholder="Email">
+                                <textarea placeholder="What do you want to say?.."></textarea>
+                                <div class="button-div"><button id="submit-button">Submit</button></div>
+                            </form>
+                        </div>
+                </div>
+        </div>
+        <div id="map">
+        </div>
+        <div class="lower-footer">
+            <div  class="up-arrow-wrapper" id="toHomeButton"><i class="fas fa-angle-up upArrow"></i></div>
+            <p>ALL RIGHTS RESERVED 2019 &copy; Nick East</p>
+            <a href="/gallery.html"><button>Press Me</button></a>
+        </div>
+            <script src="jquery3.3.1-min.js"></script>
+            <script src="/owl.carousel.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    responsive : {
+                    // breakpoint from 0 up
+                            0 : {
+                            items:1,
+                            loop:true,
+                            margin:10,  
+                            autoplay:true,
+                            autoplayTimeout:3500,
+                            autoplayHoverPause:false
+                                },
+                    // breakpoint from 768 up
+                            768 : {
+                             items:3,
+                            loop:true,
+                            margin:25,
+                            autoplay:true,
+                            autoplayTimeout:3500,
+                            autoplayHoverPause:false
+                                }
+                        }
+                    });
+                });
+            </script>
+            <script>
+                function initMap()	{
+				var  location = {lat: 51.3614, lng: -0.1940};
+				var map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 12, 
+                    center: location,
+                    styles: [
+                    {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#181818"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1b1b1b"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#2c2c2c"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8a8a8a"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#373737"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3c3c3c"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e4e4e"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3d3d3d"
+      }
+    ]
+  }
+          ]
+				});
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+        }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZv1fnBqcp2DgeJcO-kXK4MeMyuXzBiqk
+            &callback=initMap"></script>
+            <script type="module">
+            import jump from '/jump.module.js';
+             let backToHome = document.querySelector('#toHomeButton');
+            backToHome.addEventListener('click', () => {
+                jump('.home-target', {
+                        duration: 1200,
+                        offset: -190
+                    });
+            });
+            let getInContactButton = document.querySelector('#getInContactButton');
+                getInContactButton.addEventListener('click', () => {
+                    jump('.footer-container', {
+                            duration: 1200,
+                            offset: -80
+                    });
+                });
+            </script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+    </footer>
 </html>
+
+
+
+
+
+
+
